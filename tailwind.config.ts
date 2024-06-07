@@ -7,6 +7,16 @@ const config: Config = {
     'pages/**/*.{ts,tsx}',
   ],
   theme: {
+    colors: {
+      primary: {
+        light: '#4DC66B',
+        dark: '#064D47',
+      },
+      neutral: {
+        light: '#FFFFFF',
+        dark: '#2D2D2D',
+      },
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
