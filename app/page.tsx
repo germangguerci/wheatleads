@@ -5,10 +5,11 @@ import placeHolder from '../public/placeholder.svg';
 import CtaButton from './ui/ctaButton';
 import cardholder from '../public/cardholder.svg';
 import Card from './ui/card';
+import check from '../public/check.svg';
 
 export default function Home() {
   return (
-    <main className="flex size-full max-w-[1216px] flex-col items-center justify-start p-0 lg:px-8 lg:py-7">
+    <main className="flex size-full max-w-[1216px] flex-col items-center justify-start p-0 text-[#191A15] lg:px-8 lg:py-7">
       <MainNav />
       <div className="mt-[96px] flex w-full max-w-[1080px] flex-col items-center justify-center max-lg:m-0 max-lg:max-w-[530px] max-lg:px-4 max-lg:py-8">
         <div className="flex w-full justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
@@ -202,7 +203,7 @@ export default function Home() {
               image={cardholder}
               title="Administracion de CRM"
               description="Creamos la experiencia para tus usuarios 100% personalizada sobre tus públicos objetivos."
-              className="mb-[42px]"
+              className="mb-[42px] max-lg:mt-[42px]"
             />
             <Card
               image={cardholder}
@@ -210,6 +211,63 @@ export default function Home() {
               description="Creamos un funnel de conversión y realizamos seguimiento continuo para iterar  una experiencial 100% medida."
             />
           </div>
+        </div>
+        <div className="my-[180px] flex w-full max-lg:mb-[64px] max-lg:flex-col-reverse">
+          <div className="flex flex-col">
+            <h2 className="mb-[46px] text-[50px] font-bold leading-[60px] max-lg:text-[32px] max-lg:leading-[39px]">
+              Esto es sencillo, sin dolores de cabeza
+            </h2>
+            <ul>
+              <li className="mb-[30px] max-lg:mb-2">
+                <div className="flex w-full items-center justify-start max-lg:items-start">
+                  <Image
+                    src={check}
+                    alt="check"
+                    width={37}
+                    className="mr-[14px] max-lg:size-[28px]"
+                  />
+                  <p className="text-[18px] font-medium leading-[30px] max-lg:text-[16px]">
+                    Sistema Stand-alone, opera independientemente de otras
+                    soluciones
+                  </p>
+                </div>
+              </li>
+              <li className="mb-[30px] max-lg:mb-2">
+                <div className="flex w-full items-center justify-start max-lg:items-start">
+                  <Image
+                    src={check}
+                    alt="check"
+                    width={37}
+                    className="mr-[14px] max-lg:size-[28px]"
+                  />
+                  <p className="text-[18px] font-medium leading-[30px] max-lg:text-[16px]">
+                    Plug & play, una solución lista para producción
+                  </p>
+                </div>
+              </li>
+              <li className="mb-[46px] max-lg:mb-[32px]">
+                <div className="flex w-full items-center justify-start max-lg:items-start">
+                  <Image
+                    src={check}
+                    alt="check"
+                    width={37}
+                    className="mr-[14px] max-lg:size-[28px]"
+                  />
+                  <p className="text-[18px] font-medium leading-[30px] max-lg:text-[16px]">
+                    Tomarás el control, te damos toda la solución llave en mano
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <CtaButton className="w-[191px]">Contratar ahora</CtaButton>
+          </div>
+          <Image
+            src={placeHolder}
+            alt="place holder"
+            width={412}
+            height={373}
+            className="max-lg:mb-4"
+          />
         </div>
       </div>
     </main>
