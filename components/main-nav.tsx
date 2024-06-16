@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import logo from '../../public/logo.svg';
-import logoMobile from '../../public/logo-mobile.svg';
-import CtaButton from './ctaButton';
+import logo from '@/public/logo.svg';
+import logoMobile from '@/public/logo-mobile.svg';
+import CtaButton from './ui/cta-button';
 
 function Logo() {
   return (
@@ -74,7 +74,7 @@ export default function MainNav() {
   };
 
   return (
-    <nav className="relative flex w-full items-center justify-between bg-primary-dark px-4 py-[33px] lg:bg-[transparent] lg:py-[10px]">
+    <nav className="relative flex w-full items-center justify-between bg-primary-dark px-4 py-[33px] lg:bg-transparent lg:py-[10px]">
       <Logo />
       <ul className="hidden lg:flex">
         <li className="mr-7 font-bold text-primary-dark">Inicio</li>

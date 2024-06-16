@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Sora } from 'next/font/google';
 import type { ReactNode } from 'react';
-import MainNav from './ui/mainNav';
+import MainNav from '../components/main-nav';
 
 const inter = Sora({ subsets: ['latin'] });
 

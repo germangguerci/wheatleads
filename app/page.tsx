@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import underline from '../public/underline.svg';
 import placeHolder from '../public/placeholder.svg';
-import CtaButton from './ui/ctaButton';
+import CtaButton from '../components/ui/cta-button';
 import cardholder from '../public/cardholder.svg';
-import Card from './ui/card';
+import Card from '../components/ui/card';
 import check from '../public/check.svg';
+import { ContactForm } from '@/components/contact-form';
 
 export default function Home() {
   return (
@@ -260,7 +261,7 @@ export default function Home() {
           para la adquisición, por eso, nuestra oferta se ajusta a tus
           objetivos.
         </p>
-        <div className="flex w-full justify-between max-lg:flex-col">
+        <div className="flex w-full justify-between max-lg:flex-col max-lg:items-center">
           <div className="flex flex-col">
             <Image
               src={placeHolder}
@@ -269,17 +270,20 @@ export default function Home() {
               height={328}
             />
             <p className="py-[41px]">Solicita tu cotización por WhatsApp</p>
-            <CtaButton className="w-[320px]">Contactar por WhatApp</CtaButton>
+            <CtaButton className="w-full max-w-[320px]">
+              Contactar por WhatApp
+            </CtaButton>
           </div>
-          <div className="flex flex-col items-center justify-around">
-            <div className="h-[204px] w-px bg-neutral-light" />
+          <div className="flex flex-col items-center justify-around max-lg:w-full max-lg:flex-row max-lg:py-[40.5px]">
+            <div className="h-[204px] w-px bg-neutral-light max-lg:h-px max-lg:w-[120px]" />
             <span className="text-[14px]">O</span>
-            <div className="h-[204px] w-px bg-neutral-light" />
+            <div className="h-[204px] w-px bg-neutral-light max-lg:h-px max-lg:w-[120px]" />
           </div>
           <div className="flex max-w-[440px] flex-col">
-            <p className="pb-[84px] pt-[38px]">
+            <p className="pb-[17px]">
               Puedes compartir tus datos para que te contactemos a la brevedad
             </p>
+            <ContactForm />
           </div>
         </div>
       </div>
