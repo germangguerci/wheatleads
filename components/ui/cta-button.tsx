@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import { cn } from '@/lib/utils';
 
 type CtaButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
@@ -10,7 +11,7 @@ const CtaButton: React.FC<CtaButtonProps> = (props) => {
     <button
       {...props}
       className={cn(defaultClass, props?.className ?? '')}
-      type="button"
+      type={props?.type ? props.type : 'button'}
     >
       {props.children}
     </button>

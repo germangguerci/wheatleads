@@ -7,7 +7,6 @@ import { z } from 'zod';
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -45,12 +44,12 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)}>
         <FormField
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="mb-[17px]">
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input
@@ -59,9 +58,6 @@ export function ContactForm() {
                   {...field}
                 />
               </FormControl>
-              <FormDescription className="mt-2 text-muted">
-                Ingresa tu dirección de email.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -70,7 +66,7 @@ export function ContactForm() {
           control={form.control}
           name="empresa"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="mb-[17px]">
               <FormLabel>Empresa</FormLabel>
               <FormControl>
                 <Input
@@ -79,9 +75,6 @@ export function ContactForm() {
                   {...field}
                 />
               </FormControl>
-              <FormDescription className="mt-2 text-muted">
-                Ingresa el nombre de tu empresa.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -90,7 +83,7 @@ export function ContactForm() {
           control={form.control}
           name="mensaje"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="mb-[17px]">
               <FormLabel>Mensaje</FormLabel>
               <FormControl>
                 <Textarea
@@ -99,9 +92,6 @@ export function ContactForm() {
                   {...field}
                 />
               </FormControl>
-              <FormDescription className="mt-2 text-muted">
-                Escribe tu mensaje.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}

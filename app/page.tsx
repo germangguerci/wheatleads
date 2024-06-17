@@ -262,19 +262,19 @@ export default function Home() {
           objetivos.
         </p>
         <div className="flex w-full justify-between max-lg:flex-col max-lg:items-center">
-          <div className="flex flex-col">
+          <div className="flex h-full flex-col justify-between max-lg:min-h-[458px]">
             <Image
               src={placeHolder}
               alt="place holder"
               width={328}
               height={328}
             />
-            <p className="py-[41px]">Solicita tu cotización por WhatsApp</p>
+            <p>Solicita tu cotización por WhatsApp</p>
             <CtaButton className="w-full max-w-[320px]">
               Contactar por WhatApp
             </CtaButton>
           </div>
-          <div className="flex flex-col items-center justify-around max-lg:w-full max-lg:flex-row max-lg:py-[40.5px]">
+          <div className="flex flex-col items-center justify-around max-lg:flex-row max-lg:py-[40.5px]">
             <div className="h-[204px] w-px bg-neutral-light max-lg:h-px max-lg:w-[120px]" />
             <span className="text-[14px]">O</span>
             <div className="h-[204px] w-px bg-neutral-light max-lg:h-px max-lg:w-[120px]" />
