@@ -9,7 +9,7 @@ import { ContactForm } from '@/components/contact-form';
 
 export default function Home() {
   return (
-    <div className="mt-[96px] flex w-full max-w-[1080px] flex-col items-center justify-center max-lg:m-0 max-lg:max-w-[530px] max-lg:px-4 max-lg:py-8">
+    <div className="mt-[96px] flex w-full max-w-[1080px] flex-col items-center justify-center pb-[71px] max-lg:m-0 max-lg:max-w-[530px] max-lg:px-4 max-lg:py-8">
       <div className="flex w-full justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
         <div className="flex w-full max-w-[530px] flex-col items-start justify-start">
           <h1 className="text-[46px] font-bold leading-[57px] text-[#191A15] max-lg:text-[28px] max-lg:leading-[35px]">

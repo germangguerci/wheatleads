@@ -4,7 +4,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
-import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
@@ -16,6 +15,7 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from './ui/textarea';
+import CtaButton from './ui/cta-button';
 
 const formSchema = z.object({
   email: z.string().email({
@@ -54,12 +54,14 @@ export function ContactForm() {
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input
-                  className="text-[#191A15]"
+                  className="mt-[20px] text-[#191A15] max-lg:mt-2"
                   placeholder="tuemail@example.com"
                   {...field}
                 />
               </FormControl>
-              <FormDescription>Ingresa tu dirección de email.</FormDescription>
+              <FormDescription className="mt-2 text-muted">
+                Ingresa tu dirección de email.
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -72,12 +74,12 @@ export function ContactForm() {
               <FormLabel>Empresa</FormLabel>
               <FormControl>
                 <Input
-                  className="text-[#191A15]"
+                  className="mt-[20px] text-[#191A15] max-lg:mt-2"
                   placeholder="Nombre de la empresa"
                   {...field}
                 />
               </FormControl>
-              <FormDescription>
+              <FormDescription className="mt-2 text-muted">
                 Ingresa el nombre de tu empresa.
               </FormDescription>
               <FormMessage />
@@ -92,17 +94,21 @@ export function ContactForm() {
               <FormLabel>Mensaje</FormLabel>
               <FormControl>
                 <Textarea
-                  className="text-[#191A15]"
+                  className="mt-[20px] text-[#191A15] max-lg:mt-2"
                   placeholder="Tu mensaje aquí"
                   {...field}
                 />
               </FormControl>
-              <FormDescription>Escribe tu mensaje.</FormDescription>
+              <FormDescription className="mt-2 text-muted">
+                Escribe tu mensaje.
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">Enviar</Button>
+        <CtaButton type="submit" className="lg:w-full">
+          Enviar consulta
+        </CtaButton>
       </form>
     </Form>
   );
