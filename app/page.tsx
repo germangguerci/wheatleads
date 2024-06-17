@@ -9,7 +9,10 @@ import { ContactForm } from '@/components/contact-form';
 
 export default function Home() {
   return (
-    <div className="mt-[96px] flex w-full max-w-[1080px] flex-col items-center justify-center pb-[71px] max-lg:m-0 max-lg:max-w-[530px] max-lg:px-4 max-lg:py-8">
+    <div
+      id="home"
+      className="mt-[96px] flex w-full max-w-[1080px] flex-col items-center justify-center pb-[71px] max-lg:m-0 max-lg:max-w-[530px] max-lg:px-4 max-lg:py-8"
+    >
       <div className="flex w-full justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
         <div className="flex w-full max-w-[530px] flex-col items-start justify-start">
           <h1 className="text-[46px] font-bold leading-[57px] text-[#191A15] max-lg:text-[28px] max-lg:leading-[35px]">
@@ -252,7 +255,10 @@ export default function Home() {
           className="max-lg:mb-4"
         />
       </div>
-      <div className="flex w-full flex-col rounded-[16px] bg-[#191A15] p-[46px] text-[18px] leading-[22px] text-[#F9F8FE] max-lg:px-[16px] max-lg:py-[32px]">
+      <div
+        id="contact"
+        className="flex w-full flex-col rounded-[16px] bg-[#191A15] p-[46px] text-[18px] leading-[22px] text-[#F9F8FE] max-lg:px-[16px] max-lg:py-[32px]"
+      >
         <h1 className="text-center text-[50px] font-bold leading-[73px] max-lg:text-left max-lg:text-[28px] max-lg:leading-[32px]">
           Nos adaptamos a la necesidad de tu negocio, hablemos.
         </h1>
@@ -262,7 +268,7 @@ export default function Home() {
           objetivos.
         </p>
         <div className="flex w-full justify-between max-lg:flex-col max-lg:items-center">
-          <div className="flex h-full flex-col justify-between max-lg:min-h-[458px]">
+          <div className="flex h-full min-h-[458px] flex-col justify-between">
             <Image
               src={placeHolder}
               alt="place holder"

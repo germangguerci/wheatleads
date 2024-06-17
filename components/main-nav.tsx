@@ -5,6 +5,7 @@ import Image from 'next/image';
 import logo from '@/public/logo.svg';
 import logoMobile from '@/public/logo-mobile.svg';
 import CtaButton from './ui/cta-button';
+import Link from 'next/link';
 
 function Logo() {
   return (
@@ -57,7 +58,9 @@ function MobileMenu({ isOpen }: { isOpen: boolean }) {
       <ul className="flex flex-col items-center p-4 text-[white]">
         <li className="mb-4 font-bold">Inicio</li>
         <li className="mb-4">Sobre nosotros</li>
-        <li className="mb-4">Propuesta</li>
+        <li className="mb-4">
+          <Link href="#contact">Propuesta</Link>
+        </li>
         <CtaButton className="border border-solid border-[white]">
           Contratar ahora
         </CtaButton>
@@ -79,7 +82,9 @@ export default function MainNav() {
       <ul className="hidden lg:flex">
         <li className="mr-7 font-bold text-primary-dark">Inicio</li>
         <li className="mr-7">Sobre nosotros</li>
-        <li>Propuesta</li>
+        <li>
+          <Link href="#contact">Propuesta</Link>
+        </li>
       </ul>
       <CtaButton className="hidden lg:block">Contratar ahora</CtaButton>
       <HamburgerMenu onClick={toggleMenu} />
