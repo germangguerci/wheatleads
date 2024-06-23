@@ -3,6 +3,8 @@ import underline from '../public/underline.svg';
 import placeHolder from '../public/placeholder.svg';
 import CtaButton from '../components/ui/cta-button';
 import cardholder from '../public/cardholder.svg';
+import formBgDecoration from '../public/bg-t-decoration.svg';
+import sceneOne from '../public/scene-one.gif';
 import Card from '../components/ui/card';
 import check from '../public/check.svg';
 import { ContactForm } from '@/components/contact-form';
@@ -11,7 +13,7 @@ export default function Home() {
   return (
     <div
       id="home"
-      className="mt-[96px] flex w-full max-w-[1080px] flex-col items-center justify-center pb-[71px] max-lg:m-0 max-lg:max-w-[530px] max-lg:px-4 max-lg:py-8"
+      className="mt-[96px] flex w-full max-w-[1080px] flex-col items-center justify-center max-lg:m-0 max-lg:max-w-[530px] max-lg:px-4 max-lg:pt-8"
     >
       <div className="flex w-full justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
         <div className="flex w-full max-w-[530px] flex-col items-start justify-start">
@@ -53,23 +55,20 @@ export default function Home() {
         className="mb-[108px] mt-[116px] w-full max-w-[898px] text-center text-[28px] font-normal max-lg:my-[64px]
         max-lg:text-left max-lg:text-[18px]"
       >
-        Sabemos cómo poner el foco sobre la clasificación del usuario y
+        Las campañas publicitarias suelen optimizarse por el costo de los leads,
         <span className="font-bold text-primary-medium">
           {' '}
-          optimizamos la adquisición de los perfiles que mejor funcionan para tu
-          negocio
+          solamente analizando cuánto nos cuesta que alguien nos deje sus datos
+          de contacto.
         </span>
       </p>
       <div className="flex w-full items-center justify-between  px-[14px] max-lg:flex-col-reverse">
         <p className="max-w-[532px] text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
-          Desarrollamos una solución de onboarding a medida que le garantiza a
-          tus usuarios{' '}
-          <span className="font-bold text-primary-medium">
-            la mejor experiencia y para ti, la información extraída más
-            relevante.
-          </span>
+          Encontramos la forma de optimizar las campañas en función del perfil,
+          no cambiando las campañas o anuncios, sino cambiando el destino del
+          tráfico generado
         </p>
-        <Image src={placeHolder} alt="place holder" width={396} height={396} />
+        <Image src={sceneOne} alt="place holder" width={480} height={480} />
       </div>
       <div className="flex w-full items-center justify-between  px-[14px] max-lg:my-8 max-lg:flex-col">
         <Image src={placeHolder} alt="place holder" width={396} height={396} />
@@ -257,13 +256,19 @@ export default function Home() {
       </div>
       <div
         id="contact"
-        className="flex w-full flex-col rounded-[16px] bg-[#191A15] p-[46px] text-[18px] leading-[22px] text-[#F9F8FE] max-lg:px-[16px] max-lg:py-[32px]"
+        className="relative z-[-2] flex w-full flex-col rounded-t-[50px] bg-[#2D2D2D] px-[100px] py-[127px] text-[18px] leading-[22px] text-[#F9F8FE] max-lg:px-4 max-lg:pt-8"
       >
+        <Image
+          src={formBgDecoration}
+          alt="background decoration"
+          width={1483}
+          className="absolute left-0 top-0 z-[-1]"
+        />
         <h1 className="text-center text-[50px] font-bold leading-[73px] max-lg:text-left max-lg:text-[28px] max-lg:leading-[32px]">
           Nos adaptamos a la necesidad de tu negocio, hablemos.
         </h1>
         <p className="pb-[84px] pt-[38px] text-center  max-lg:text-left">
-          Sabemos que cada producto tiene sus desafíos y estructuras existente
+          4 Sabemos que cada producto tiene sus desafíos y estructuras existente
           para la adquisición, por eso, nuestra oferta se ajusta a tus
           objetivos.
         </p>
