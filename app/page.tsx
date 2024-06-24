@@ -7,6 +7,9 @@ import formBgDecoration from '../public/bg-t-decoration.svg';
 import sceneOne from '../public/scene-one.gif';
 import Card from '../components/ui/card';
 import check from '../public/check.svg';
+import data from '../public/data.svg';
+import star from '../public/star.svg';
+import code from '../public/code.svg';
 import { ContactForm } from '@/components/contact-form';
 
 export default function Home() {
@@ -102,8 +105,8 @@ export default function Home() {
           </h2>
           <div className="flex items-start justify-start">
             <Image
-              src={placeHolder}
-              alt="place holder"
+              src={data}
+              alt="data"
               width={75}
               height={75}
               className="mr-4 max-lg:hidden"
@@ -121,8 +124,8 @@ export default function Home() {
           </div>
           <div className="flex items-start justify-start">
             <Image
-              src={placeHolder}
-              alt="place holder"
+              src={star}
+              alt="star"
               width={75}
               height={75}
               className="mr-4 max-lg:hidden"
@@ -140,8 +143,8 @@ export default function Home() {
           </div>
           <div className="flex items-start justify-start">
             <Image
-              src={placeHolder}
-              alt="place holder"
+              src={code}
+              alt="code"
               width={75}
               height={75}
               className="mr-4 max-lg:hidden"
