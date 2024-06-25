@@ -4,7 +4,10 @@ import placeHolder from '../public/placeholder.svg';
 import CtaButton from '../components/ui/cta-button';
 import cardholder from '../public/cardholder.svg';
 import formBgDecoration from '../public/bg-t-decoration.svg';
-import sceneOne from '../public/scene-one.gif';
+import sceneOne from '../public/ilustracion-1.svg';
+import sceneTwo from '../public/ilustracion-2.svg';
+import sceneThree from '../public/ilustracion-3.svg';
+import sceneFour from '../public/ilustracion-4.svg';
 import Card from '../components/ui/card';
 import check from '../public/check.svg';
 import data from '../public/data.svg';
@@ -18,7 +21,7 @@ export default function Home() {
       id="home"
       className="mt-[96px] flex w-full max-w-[1080px] flex-col items-center justify-center max-lg:m-0 max-lg:max-w-[530px] max-lg:px-4 max-lg:pt-8"
     >
-      <div className="flex w-full justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
+      <div className="flex w-full items-end justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
         <div className="flex w-full max-w-[530px] flex-col items-start justify-start">
           <h1 className="text-[46px] font-bold leading-[57px] text-[#191A15] max-lg:text-[28px] max-lg:leading-[35px]">
             Separamos la paja del trigo,{' '}
@@ -47,10 +50,10 @@ export default function Home() {
           <CtaButton className="w-[242px]">Contratar ahora</CtaButton>
         </div>
         <Image
-          src={placeHolder}
+          src={sceneOne}
           alt="place holder"
-          width={359}
-          height={396}
+          width={535}
+          height={484}
           className="max-lg:hidden"
         />
       </div>
@@ -65,31 +68,27 @@ export default function Home() {
           de contacto.
         </span>
       </p>
-      <div className="flex w-full items-center justify-between  px-[14px] max-lg:flex-col-reverse">
-        <p className="max-w-[532px] text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
+      <div className="mb-[62px] flex w-full items-center justify-between  px-[14px] max-lg:mb-0 max-lg:flex-col-reverse">
+        <p className="text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
           Encontramos la forma de optimizar las campañas en función del perfil,
           no cambiando las campañas o anuncios, sino cambiando el destino del
           tráfico generado
         </p>
-        <Image src={sceneOne} alt="place holder" width={480} height={480} />
+        <Image src={sceneTwo} alt="place holder" width={532} height={480} />
       </div>
-      <div className="flex w-full items-center justify-between  px-[14px] max-lg:my-8 max-lg:flex-col">
-        <Image src={placeHolder} alt="place holder" width={396} height={396} />
-        <p className="max-w-[532px] text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
-          Optimizamos tus campañas con{' '}
-          <span className="font-bold text-primary-medium">
-            conversiones inteligentes que prioricen el perfil que estás buscando
-          </span>
+      <div className="mb-[62px] flex w-full items-center  justify-between px-[14px] max-lg:my-8 max-lg:flex-col">
+        <Image src={sceneThree} alt="place holder" width={528} height={477} />
+        <p className="text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
+          Optimizamos tus campañas con conversiones inteligentes que prioricen
+          el perfil que estás buscando
         </p>
       </div>
-      <div className="flex w-full items-center justify-between px-[14px] max-lg:flex-col-reverse">
-        <p className="max-w-[532px] text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
-          Almacenamos tus leads en un CRM para que puedas{' '}
-          <span className="font-bold text-primary-medium">
-            consultar los reportes de forma fácil, rápida y eficiente.
-          </span>
+      <div className="mb-[118px] flex w-full items-center justify-between px-[14px] max-lg:mb-0 max-lg:flex-col-reverse">
+        <p className="text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
+          Almacenamos tus leads en un CRM para que pueda consultar los reportes
+          de forma fácil, rápida y eficiente.
         </p>
-        <Image src={placeHolder} alt="place holder" width={396} height={396} />
+        <Image src={sceneFour} alt="place holder" width={528} height={353} />
       </div>
       <div className="flex w-full items-center justify-center">
         <Image
@@ -99,7 +98,7 @@ export default function Home() {
           height={517}
           className="max-lg:hidden"
         />
-        <div className="mb-[120px] ml-8 mt-[46px] flex w-full flex-col items-start justify-start max-lg:mb-[64px] max-lg:ml-0">
+        <div className="mb-[120px] ml-8 mt-[32px] flex w-full flex-col items-start justify-start max-lg:mb-[64px] max-lg:ml-0">
           <h2 className="mb-[42px] text-[32px] font-semibold text-[#191A15]">
             ¿Cómo lo hacemos?
           </h2>
