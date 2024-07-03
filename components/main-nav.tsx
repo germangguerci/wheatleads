@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import Image from 'next/image';
 import logo from '@/public/logo.svg';
 import logoMobile from '@/public/logo-mobile.svg';
 import CtaButton from './ui/cta-button';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 function Logo() {
   return (
@@ -51,21 +52,57 @@ function HamburgerMenu({
 }
 
 function MobileMenu({ isOpen }: { isOpen: boolean }) {
+  const NavLinks = [
+    { name: 'Inicio', path: '/' },
+    { name: 'Sobre nosotros', path: '/about' },
+    { name: 'Propuesta', path: '/#contact' },
+  ];
+  const pathname = usePathname();
+  const isActive = (path: string) => path === pathname;
   return (
     <div
       className={`absolute left-0 top-[6.8rem] w-full bg-primary-dark shadow-lg ${isOpen ? 'block' : 'hidden'}`}
     >
       <ul className="flex flex-col items-center p-4 text-[white]">
-        <li className="mb-4 font-bold">Inicio</li>
-        <li className="mb-4">Sobre nosotros</li>
-        <li className="mb-4">
-          <Link href="#contact">Propuesta</Link>
-        </li>
+        {NavLinks.map((link) => {
+          return (
+            <li
+              key={link.path}
+              className={`mb-4 ${isActive(link.path) && 'font-bold'}`}
+            >
+              <Link href={link.path}>{link.name}</Link>
+            </li>
+          );
+        })}
         <CtaButton className="border border-solid border-[white]">
           Contratar ahora
         </CtaButton>
       </ul>
     </div>
+  );
+}
+
+function DesktopMenu() {
+  const NavLinks = [
+    { name: 'Inicio', path: '/' },
+    { name: 'Sobre nosotros', path: '/about' },
+    { name: 'Propuesta', path: '/#contact' },
+  ];
+  const pathname = usePathname();
+  const isActive = (path: string) => path === pathname;
+  return (
+    <ul className="hidden lg:flex">
+      {NavLinks.map((link) => {
+        return (
+          <li
+            key={link.path}
+            className={`mr-7 ${isActive(link.path) && 'font-bold text-primary-dark'}`}
+          >
+            <Link href={link.path}>{link.name}</Link>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 
@@ -79,15 +116,13 @@ export default function MainNav() {
   return (
     <nav className="relative flex w-full items-center justify-between bg-primary-dark px-4 py-[33px] lg:bg-transparent lg:py-[10px]">
       <Logo />
-      <ul className="hidden lg:flex">
-        <li className="mr-7 font-bold text-primary-dark">Inicio</li>
-        <li className="mr-7">Sobre nosotros</li>
-        <li>
-          <Link href="#contact">Propuesta</Link>
-        </li>
-      </ul>
+      <Suspense>
+        <DesktopMenu />
+      </Suspense>
       <CtaButton className="hidden lg:block">Contratar ahora</CtaButton>
-      <HamburgerMenu onClick={toggleMenu} />
+      <Suspense>
+        <HamburgerMenu onClick={toggleMenu} />
+      </Suspense>
       <MobileMenu isOpen={menuOpen} />
     </nav>
   );

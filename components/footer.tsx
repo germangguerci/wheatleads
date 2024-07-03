@@ -38,10 +38,13 @@ export default function Footer() {
             <h3 className="mb-[29px] font-bold max-lg:mb-[18px]">
               Mapa del sitio
             </h3>
-            <Link className="mb-[18px]" href="#home">
+            <Link className="mb-[18px]" href="/">
               Inicio
             </Link>
-            <Link className="mb-[18px]" href="#contact">
+            <Link className="mb-[18px]" href="/about">
+              Sobre nosotros
+            </Link>
+            <Link className="mb-[18px]" href="/#contact">
               Propuesta
             </Link>
           </div>

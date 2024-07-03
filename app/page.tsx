@@ -271,7 +271,7 @@ export default function Home() {
           Nos adaptamos a la necesidad de tu negocio, hablemos.
         </h1>
         <p className="pb-[84px] pt-[38px] text-center  max-lg:text-left">
-          4 Sabemos que cada producto tiene sus desafíos y estructuras existente
+          Sabemos que cada producto tiene sus desafíos y estructuras existente
           para la adquisición, por eso, nuestra oferta se ajusta a tus
           objetivos.
         </p>
