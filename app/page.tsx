@@ -51,9 +51,9 @@ export default function Home() {
         </div>
         <Image
           src={sceneOne}
-          alt="place holder"
-          width={535}
-          height={484}
+          alt="lead filter"
+          width={440}
+          height={397}
           className="max-lg:hidden"
         />
       </div>
@@ -62,33 +62,34 @@ export default function Home() {
         max-lg:text-left max-lg:text-[18px]"
       >
         Las campañas publicitarias suelen optimizarse por el costo de los leads,
-        <span className="font-bold text-primary-medium">
+        <span className="font-bold text-primary-dark">
           {' '}
           solamente analizando cuánto nos cuesta que alguien nos deje sus datos
           de contacto.
         </span>
       </p>
       <div className="mb-[62px] flex w-full items-center justify-between  px-[14px] max-lg:mb-0 max-lg:flex-col-reverse">
-        <p className="text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
+        <p className="max-w-[592px] text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
           Encontramos la forma de optimizar las campañas en función del perfil,
           no cambiando las campañas o anuncios, sino cambiando el destino del
           tráfico generado
         </p>
-        <Image src={sceneTwo} alt="place holder" width={532} height={480} />
+        <Image src={sceneTwo} alt="place holder" width={391} height={352} />
       </div>
       <div className="mb-[62px] flex w-full items-center  justify-between px-[14px] max-lg:my-8 max-lg:flex-col">
-        <Image src={sceneThree} alt="place holder" width={528} height={477} />
-        <p className="text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
-          Optimizamos tus campañas con conversiones inteligentes que prioricen
-          el perfil que estás buscando
+        <Image src={sceneThree} alt="place holder" width={390} height={352} />
+        <p className="max-w-[592px] text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
+          También te ayudamos a mejorar las campañas en todas tus redes sociales
+          con conversiones inteligentes que capturen ese perfil que estás
+          buscando.
         </p>
       </div>
       <div className="mb-[118px] flex w-full items-center justify-between px-[14px] max-lg:mb-0 max-lg:flex-col-reverse">
         <p className="text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
-          Almacenamos tus leads en un CRM para que pueda consultar los reportes
-          de forma fácil, rápida y eficiente.
+          Finalmente, almacenamos tus leads en un CRM para que puedas consultar
+          los reportes de forma fácil, rápida y eficiente.
         </p>
-        <Image src={sceneFour} alt="place holder" width={528} height={353} />
+        <Image src={sceneFour} alt="place holder" width={526} height={352} />
       </div>
       <div className="flex w-full items-center justify-center">
         <Image
