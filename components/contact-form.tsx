@@ -44,12 +44,15 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)}>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="flex w-full flex-col items-center"
+      >
         <FormField
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem className="mb-[17px]">
+            <FormItem className="mb-[17px] w-full">
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input
@@ -66,7 +69,7 @@ export function ContactForm() {
           control={form.control}
           name="empresa"
           render={({ field }) => (
-            <FormItem className="mb-[17px]">
+            <FormItem className="mb-[17px] w-full">
               <FormLabel>Empresa</FormLabel>
               <FormControl>
                 <Input
@@ -83,8 +86,8 @@ export function ContactForm() {
           control={form.control}
           name="mensaje"
           render={({ field }) => (
-            <FormItem className="mb-[17px]">
-              <FormLabel>Mensaje</FormLabel>
+            <FormItem className="mb-[17px] w-full">
+              <FormLabel>¿Cómo te ayudamos?</FormLabel>
               <FormControl>
                 <Textarea
                   className="mt-[20px] text-[#191A15] max-lg:mt-2"
@@ -96,7 +99,10 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <CtaButton type="submit" className="lg:w-full">
+        <CtaButton
+          type="submit"
+          className="w-full max-w-[201px] px-[30px] py-[20px] text-[17px]"
+        >
           Enviar consulta
         </CtaButton>
       </form>

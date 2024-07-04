@@ -1,6 +1,7 @@
-import logo from '@/public/logo-mobile.svg';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import logo from '@/public/logo-mobile.svg';
 
 function Logo() {
   return (
@@ -21,36 +22,38 @@ function Logo() {
 
 export default function Footer() {
   return (
-    <footer className="flex w-full justify-center bg-[#161C28] px-[100px] pb-[64px] pt-[82px] text-white max-lg:px-4 max-lg:pb-[64px] max-lg:pt-[32px]">
-      <div className="flex w-full max-w-[1080px] flex-col">
-        <div className="mb-[64px] flex w-full justify-between max-lg:flex-col">
-          <div className="mb-8 flex flex-col items-start max-lg:items-center">
-            <Logo />
-            <div className="flex flex-col">
-              <p className="mb-4 leading-[30px]">
-                Escíbenos a info@wheatleads.com
-              </p>
-              <p className="mb-4 leading-[30px]">+54 9 11 3668 2382</p>
-              <p className="leading-[30px]">Buenos Aires, Argentina</p>
+    <footer className="flex w-full flex-col justify-center bg-[#161c28] text-white">
+      <div className="flex w-full justify-center  pb-[64px] pt-[82px]">
+        <div className="flex w-full max-w-[1080px] flex-col items-center">
+          <div className="mb-[64px] flex w-full justify-between max-lg:flex-col">
+            <div className="mb-8 flex flex-col items-start max-lg:items-center">
+              <Logo />
+              <div className="flex flex-col">
+                <p className="mb-4 leading-[30px]">
+                  Escíbenos a info@wheatleads.com
+                </p>
+                <p className="mb-4 leading-[30px]">+54 9 11 3668 2382</p>
+                <p className="leading-[30px]">Buenos Aires, Argentina</p>
+              </div>
+            </div>
+            <div className="flex flex-col max-lg:items-center">
+              <h3 className="mb-[29px] font-bold max-lg:mb-[18px]">
+                Mapa del sitio
+              </h3>
+              <Link className="mb-[18px]" href="/">
+                Inicio
+              </Link>
+              <Link className="mb-[18px]" href="/about">
+                Sobre nosotros
+              </Link>
+              <Link className="mb-[18px]" href="/#contact">
+                Propuesta
+              </Link>
             </div>
           </div>
-          <div className="flex flex-col max-lg:items-center">
-            <h3 className="mb-[29px] font-bold max-lg:mb-[18px]">
-              Mapa del sitio
-            </h3>
-            <Link className="mb-[18px]" href="/">
-              Inicio
-            </Link>
-            <Link className="mb-[18px]" href="/about">
-              Sobre nosotros
-            </Link>
-            <Link className="mb-[18px]" href="/#contact">
-              Propuesta
-            </Link>
+          <div className="flex w-full justify-start max-lg:justify-center max-lg:text-center">
+            <p>© 2024 Wheatleads. Copyright and rights reserved</p>
           </div>
-        </div>
-        <div className="flex w-full justify-start max-lg:justify-center max-lg:text-center">
-          <p>© 2024 Wheatleads. Copyright and rights reserved</p>
         </div>
       </div>
     </footer>
