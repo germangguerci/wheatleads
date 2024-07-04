@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import logo from '@/public/logo.svg';
 import logoMobile from '@/public/logo-mobile.svg';
@@ -116,13 +116,9 @@ export default function MainNav() {
   return (
     <nav className="relative flex w-full items-center justify-between bg-primary-dark px-4 py-[33px] lg:bg-transparent lg:py-[10px]">
       <Logo />
-      <Suspense>
-        <DesktopMenu />
-      </Suspense>
+      <DesktopMenu />
       <CtaButton className="hidden lg:block">Contratar ahora</CtaButton>
-      <Suspense>
-        <HamburgerMenu onClick={toggleMenu} />
-      </Suspense>
+      <HamburgerMenu onClick={toggleMenu} />
       <MobileMenu isOpen={menuOpen} />
     </nav>
   );

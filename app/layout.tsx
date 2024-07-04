@@ -25,7 +25,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <header className="flex w-full max-w-screen-xl">
           <MainNav />
         </header>
-        <main className="flex size-full max-w-[1080px] flex-col items-center justify-start p-0 text-[#191A15]">
+        <main className="flex size-full flex-col items-center justify-start p-0 text-[#191A15]">
           {children}
         </main>
         <Footer />

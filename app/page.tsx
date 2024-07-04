@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import underline from '../public/underline.svg';
-import placeHolder from '../public/placeholder.svg';
+import demoApp from '../public/demoapp.gif';
 import CtaButton from '../components/ui/cta-button';
-import cardholder from '../public/cardholder.svg';
 import formBgDecoration from '../public/bg-t-decoration.svg';
 import sceneOne from '../public/ilustracion-1.svg';
 import sceneTwo from '../public/ilustracion-2.svg';
@@ -13,6 +12,13 @@ import check from '../public/check.svg';
 import data from '../public/data.svg';
 import star from '../public/star.svg';
 import code from '../public/code.svg';
+import ux from '../public/ilustracion-ux.svg';
+import cpg from '../public/ilustracion-cpg.svg';
+import cc from '../public/ilustracion-cc.svg';
+import dev from '../public/ilustracion-dev.svg';
+import easy from '../public/easy.svg';
+import cellphone from '../public/cellphone.svg';
+
 import { ContactForm } from '@/components/contact-form';
 
 export default function Home() {
@@ -91,15 +97,15 @@ export default function Home() {
         </p>
         <Image src={sceneFour} alt="place holder" width={526} height={352} />
       </div>
-      <div className="flex w-full items-center justify-center">
+      <div className="flex w-full items-center justify-center rounded-xl p-[71px] max-lg:p-0 lg:mb-[54px] lg:bg-white">
         <Image
-          src={placeHolder}
-          alt="place holder"
-          width={517}
-          height={517}
+          src={demoApp}
+          alt="Demo onboarding"
+          width={590}
+          height={590}
           className="max-lg:hidden"
         />
-        <div className="mb-[120px] ml-8 mt-[32px] flex w-full flex-col items-start justify-start max-lg:mb-[64px] max-lg:ml-0">
+        <div className="ml-8 mt-[32px] flex w-full flex-col items-start justify-start max-lg:mb-[64px] max-lg:ml-0">
           <h2 className="mb-[42px] text-[32px] font-semibold text-[#191A15]">
             ¿Cómo lo hacemos?
           </h2>
@@ -149,7 +155,7 @@ export default function Home() {
               height={75}
               className="mr-4 max-lg:hidden"
             />
-            <div className="mb-[42px] flex flex-col items-start justify-start">
+            <div className="flex flex-col items-start justify-start">
               <h3 className="text-[28px] font-bold text-primary-dark max-lg:text-[24px]">
                 Desarrollo a tu medida
               </h3>
@@ -174,32 +180,33 @@ export default function Home() {
       <div className="flex w-full max-lg:flex-col">
         <div className="mb-[192px] mr-[18.5px] flex flex-col max-lg:m-0">
           <Card
-            image={cardholder}
+            image={ux}
             title="Diseño UX/UI"
             description="Creamos la experiencia para tus usuarios 100% personalizada sobre tus públicos objetivos."
             className="mb-[42px]"
           />
           <Card
-            image={cardholder}
-            title="Optimización de campañas"
-            description="Creamos un funnel de conversión y realizamos seguimiento continuo para iterar una experiencial 100% medida."
+            image={cc}
+            title="Integración con Contact Center"
+            description="Creamos un funnel de conversión y realizamos seguimiento continuo para iterar  una experiencial 100% medida."
           />
         </div>
         <div className="mt-[192px] flex flex-col max-lg:m-0">
           <Card
-            image={cardholder}
-            title="Administracion de CRM"
-            description="Creamos la experiencia para tus usuarios 100% personalizada sobre tus públicos objetivos."
             className="mb-[42px] max-lg:mt-[42px]"
+            image={dev}
+            title="Desarrollo de la aplicación"
+            description="Desarrollamos aplicaciones a medida, optimizadas para rendimiento y escalabilidad, garantizando una experiencia de usuario excepcional."
           />
+
           <Card
-            image={cardholder}
+            image={cpg}
             title="Optimización de campañas"
             description="Creamos un funnel de conversión y realizamos seguimiento continuo para iterar  una experiencial 100% medida."
           />
         </div>
       </div>
-      <div className="my-[180px] flex w-full max-lg:mb-[64px] max-lg:flex-col-reverse">
+      <div className="my-[180px] flex w-full max-lg:my-8 max-lg:mb-[64px] max-lg:flex-col-reverse">
         <div className="flex flex-col">
           <h2 className="mb-[46px] text-[50px] font-bold leading-[60px] max-lg:text-[32px] max-lg:leading-[39px]">
             Esto es sencillo, sin dolores de cabeza
@@ -250,8 +257,8 @@ export default function Home() {
           <CtaButton className="w-[191px]">Contratar ahora</CtaButton>
         </div>
         <Image
-          src={placeHolder}
-          alt="place holder"
+          src={easy}
+          alt="llaves en mano"
           width={412}
           height={373}
           className="max-lg:mb-4"
@@ -278,10 +285,10 @@ export default function Home() {
         <div className="flex w-full justify-between max-lg:flex-col max-lg:items-center">
           <div className="flex h-full min-h-[458px] flex-col justify-between">
             <Image
-              src={placeHolder}
+              src={cellphone}
               alt="place holder"
-              width={328}
-              height={328}
+              width={326}
+              height={326}
             />
             <p>Solicita tu cotización por WhatsApp</p>
             <CtaButton className="w-full max-w-[320px]">
