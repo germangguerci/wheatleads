@@ -44,7 +44,7 @@ export default function About() {
             className="max-lg:mb-4"
           />
         </div>
-        <div className="mb-[449px] flex w-full justify-end max-lg:flex-col">
+        <div className="mb-[449px] flex w-full justify-end max-lg:mb-[124px] max-lg:flex-col">
           <IconCard
             image={lightBulb}
             className="mr-4 max-lg:mb-4 max-lg:mr-0"
@@ -56,6 +56,18 @@ export default function About() {
             title="UX/UI Designer"
           />
           <IconCard image={starIcon} title="Content Strategy" />
+        </div>
+      </div>
+      <div className="flex w-full flex-col items-center bg-[#f9fcfa]">
+        <div className="flex max-w-[1080px] flex-col items-center">
+          <p className="my-[46px] text-[28px] leading-[35px] text-[#191A15] max-lg:text-[18px] max-lg:leading-[23px]">
+            Al trabajar con nuestro equipo tendrás la oportunidad de ser parte
+            de él y ayudarnos a crear una solución conjunta. Es por eso, que tu{' '}
+            <span className="font-bold">
+              serás una pieza clave en el proceso de validación y nuestro faro
+              en la visión de tu marca.
+            </span>
+          </p>
         </div>
       </div>
     </div>
