@@ -16,6 +16,7 @@ import cpg from '../public/ilustracion-cpg.svg';
 import cc from '../public/ilustracion-cc.svg';
 import dev from '../public/ilustracion-dev.svg';
 import easy from '../public/easy.svg';
+import bg1 from '../public/bg-1-total.svg';
 import Contact from '@/components/contact';
 
 export default function Home() {
@@ -96,7 +97,13 @@ export default function Home() {
           </p>
           <Image src={sceneFour} alt="place holder" width={526} height={352} />
         </div>
-        <div className="flex w-full items-center justify-center rounded-xl p-[71px] max-lg:p-0 lg:mb-[54px] lg:bg-white">
+        <div className="flex w-full items-center justify-center rounded-xl p-[71px] max-lg:p-0 lg:relative lg:z-[-2] lg:mb-[54px] lg:bg-[#fcfcfc]">
+          <Image
+            src={bg1}
+            alt="background decoration"
+            width={1280}
+            className="absolute left-0 top-[-380px] z-[-1] max-lg:hidden"
+          />
           <Image
             src={demoApp}
             alt="Demo onboarding"
@@ -104,7 +111,7 @@ export default function Home() {
             height={590}
             className="max-lg:hidden"
           />
-          <div className="ml-8 mt-[32px] flex w-full flex-col items-start justify-start max-lg:mb-[64px] max-lg:ml-0">
+          <div className="ml-28 mt-[180px] flex w-full flex-col items-start justify-start max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
             <h2 className="mb-[42px] text-[32px] font-semibold text-[#191A15]">
               ¿Cómo lo hacemos?
             </h2>
@@ -167,7 +174,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mb-[72px] flex w-full items-start justify-between max-lg:flex-col">
+        <div className="mb-[72px] flex w-full flex-col items-start justify-between lg:mt-[200px]">
           <h2 className="w-full text-[32px] font-semibold text-[#191A15]">
             Esto encontrarás si trabajas con nuestro equipo
           </h2>

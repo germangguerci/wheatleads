@@ -77,13 +77,6 @@
     body {
       @apply bg-background text-foreground;
       color: rgb(var(--foreground-rgb));
-      background: linear-gradient(
-          to top,
-          transparent,
-          #d1f3d7
-        ),
-        rgb(var(--background-start-rgb));
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+      background-color: #d1f3d7;
     }
   }

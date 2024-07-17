@@ -5,29 +5,41 @@ import lightBulb from '../../public/light-bulb.svg';
 import commandLine from '../../public/command-line.svg';
 import IconCard from '@/components/icon-card';
 import code from '../../public/code-bracket-square.svg';
+import bg3 from '../../public/bg-3.svg';
+import bg2 from '../../public/bg-2.svg';
+import Image from 'next/image';
 
 export default function About() {
   return (
-    <div className="flex w-full flex-col items-center justify-center bg-[#191A15] max-lg:max-w-[530px]">
-      <div className="flex w-full max-w-[1080px] flex-col items-start justify-center text-[#E7ECF3] max-lg:px-4 max-lg:py-8">
-        <h2 className="mb-[387px] mt-[165px] max-w-[850px] text-[32px] leading-[40px] max-lg:mb-[104px] max-lg:mt-0 max-lg:text-[24px] max-lg:leading-[30px]">
-          Sabemos cómo poner el foco sobre la clasificación del usuario y
-          <span className="font-bold">
-            {' '}
-            optimizamos la adquisición de los perfiles que mejor funcionan para
-            tu negocio
-          </span>
-        </h2>
-        <div className="mb-[91px] flex w-full justify-between max-lg:flex-col">
-          <h1 className="max-w-[441px] text-[36px] font-bold leading-[45px] max-lg:mb-4 max-lg:text-[24px] max-lg:leading-[30px]">
+    <div className="z-[-1] flex w-full flex-col items-center justify-center bg-[#191A15] max-lg:max-w-[530px]">
+      <div className="flex w-full max-w-[1080px] flex-col items-start justify-center text-[#E7ECF3] max-lg:py-8">
+        <div className="z-10 flex">
+          <h2 className="mb-[387px] mt-[165px] max-w-[850px] text-[32px] leading-[40px] max-lg:mb-[154px] max-lg:mt-0 max-lg:px-4 max-lg:text-[24px] max-lg:leading-[30px]">
+            Sabemos cómo poner el foco sobre la clasificación del usuario y
+            <span className="font-bold">
+              {' '}
+              optimizamos la adquisición de los perfiles que mejor funcionan
+              para tu negocio
+            </span>
+          </h2>
+        </div>
+
+        <div className="relative z-[1] mb-[91px] flex w-full justify-between max-lg:flex-col">
+          <Image
+            src={bg3}
+            width={1280}
+            alt="background decoration"
+            className="absolute bottom-0 left-0 max-lg:bottom-[100px]"
+          />
+          <h1 className="max-w-[441px] text-[36px] font-bold leading-[45px] max-lg:mb-4 max-lg:px-4 max-lg:text-[24px] max-lg:leading-[30px]">
             Conoce los perfiles de este equipo ganador
           </h1>
-          <p className="max-w-[542px] text-[26px] leading-[32px] max-lg:text-[18px] max-lg:leading-[22px]">
+          <p className="max-w-[542px] text-[26px] leading-[32px] max-lg:px-4 max-lg:text-[18px] max-lg:leading-[22px]">
             Somos los especialistas que necesitas para optimizar todos tus
             canales de difusión y atracción de clientes.
           </p>
         </div>
-        <div className="mb-[38px] flex w-full justify-start max-lg:mb-0 max-lg:flex-col">
+        <div className="z-10 mb-[38px] flex w-full justify-start max-lg:mb-0 max-lg:flex-col max-lg:px-4">
           <IconCard
             image={code}
             className="mr-4 max-lg:mb-4 max-lg:mr-0"
@@ -44,7 +56,7 @@ export default function About() {
             className="max-lg:mb-4"
           />
         </div>
-        <div className="mb-[449px] flex w-full justify-end max-lg:mb-[124px] max-lg:flex-col">
+        <div className="z-10 mb-[350px] flex w-full justify-end max-lg:mb-[120px] max-lg:flex-col max-lg:px-4">
           <IconCard
             image={lightBulb}
             className="mr-4 max-lg:mb-4 max-lg:mr-0"
@@ -58,9 +70,15 @@ export default function About() {
           <IconCard image={starIcon} title="Content Strategy" />
         </div>
       </div>
-      <div className="flex w-full flex-col items-center bg-[#f9fcfa]">
-        <div className="flex max-w-[1080px] flex-col items-center">
-          <p className="my-[46px] text-[28px] leading-[35px] text-[#191A15] max-lg:text-[18px] max-lg:leading-[23px]">
+      <div className="relative flex w-full max-w-[1080px] flex-col items-center bg-[#f9fcfa] px-[10px] lg:px-[100px]">
+        <Image
+          src={bg2}
+          alt="background decoration"
+          width={1280}
+          className="absolute bottom-0 z-0 max-lg:bottom-[150px]"
+        />
+        <div className="z-10 flex flex-col items-center">
+          <p className=" text-[28px] leading-[35px] text-[#191A15] max-lg:text-[18px] max-lg:leading-[23px]">
             Al trabajar con nuestro equipo tendrás la oportunidad de ser parte
             de él y ayudarnos a crear una solución conjunta. Es por eso, que tu{' '}
             <span className="font-bold">
