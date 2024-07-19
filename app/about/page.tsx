@@ -5,8 +5,9 @@ import lightBulb from '../../public/light-bulb.svg';
 import commandLine from '../../public/command-line.svg';
 import IconCard from '@/components/icon-card';
 import code from '../../public/code-bracket-square.svg';
-import bg3 from '../../public/bg-3.svg';
-import bg2 from '../../public/bg-2.svg';
+import Card from '@/components/ui/card';
+import phw from '../../public/phhorizontal.svg';
+import phv from '../../public/phvertical.svg';
 import Image from 'next/image';
 
 export default function About() {
@@ -25,12 +26,6 @@ export default function About() {
         </div>
 
         <div className="relative z-[1] mb-[91px] flex w-full justify-between max-lg:flex-col">
-          <Image
-            src={bg3}
-            width={1280}
-            alt="background decoration"
-            className="absolute bottom-0 left-0 max-lg:bottom-[100px]"
-          />
           <h1 className="max-w-[441px] text-[36px] font-bold leading-[45px] max-lg:mb-4 max-lg:px-4 max-lg:text-[24px] max-lg:leading-[30px]">
             Conoce los perfiles de este equipo ganador
           </h1>
@@ -70,13 +65,7 @@ export default function About() {
           <IconCard image={starIcon} title="Content Strategy" />
         </div>
       </div>
-      <div className="relative flex w-full max-w-[1080px] flex-col items-center bg-[#f9fcfa] px-[10px] lg:px-[100px]">
-        <Image
-          src={bg2}
-          alt="background decoration"
-          width={1280}
-          className="absolute bottom-0 z-0 max-lg:bottom-[150px]"
-        />
+      <div className="relative flex w-full max-w-[1080px] flex-col items-center bg-[#f9fcfa]">
         <div className="z-10 flex flex-col items-center">
           <p className=" text-[28px] leading-[35px] text-[#191A15] max-lg:text-[18px] max-lg:leading-[23px]">
             Al trabajar con nuestro equipo tendrás la oportunidad de ser parte
@@ -86,6 +75,39 @@ export default function About() {
               en la visión de tu marca.
             </span>
           </p>
+        </div>
+        <div className="mb-[105px] mt-[46px] flex w-full">
+          <div className="mr-4 flex flex-col justify-between bg-slate-400">
+            <div className="flex w-full flex-col rounded-[16px] bg-neutral-light p-8 shadow-card-md">
+              <Image src={phw} alt="Card image" width={468} />
+              <h1 className="mt-[30px] text-[30px] font-bold text-[#191A15]">
+                Somo ágiles
+              </h1>
+              <p className="mt-4 font-[18px] leading-[30px]">
+                La rapidez no da resultados, pero sí el orden y el cumplimiento
+                de tareas. Por eso para ser eficientes en la gestión del tiempo,
+                evitamos las reuniones innecesarias.
+              </p>
+            </div>
+            <div className="mt-4 flex w-full flex-col rounded-[16px] bg-neutral-light p-8 shadow-card-md">
+              <Image src={phw} alt="Card image" width={468} />
+              <h1 className="mt-[30px] text-[30px] font-bold text-[#191A15]">
+                Somo ágiles
+              </h1>
+              <p className="mt-4 font-[18px] leading-[30px]">
+                La rapidez no da resultados, pero sí el orden y el cumplimiento
+                de tareas. Por eso para ser eficientes en la gestión del tiempo,
+                evitamos las reuniones innecesarias.
+              </p>
+            </div>
+          </div>
+          <Card
+            image={phv}
+            wImage={466}
+            title="100% autónomos"
+            description="Parte de hacer bien nuestro trabajo es que vos puedas verlo siempre. Nos encanta que seas parte de un tablero de seguimiento para que veas por dónde estamos cosechando."
+            className="max-w-[530px] shadow-card-md"
+          />
         </div>
       </div>
     </div>

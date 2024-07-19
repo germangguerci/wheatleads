@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import underline from '../public/underline.svg';
-import demoApp from '../public/demoapp.gif';
+import demoApp from '../public/demoapp.png';
 import CtaButton from '../components/ui/cta-button';
 import sceneOne from '../public/ilustracion-1.svg';
 import sceneTwo from '../public/ilustracion-2.svg';
@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div
       id="home"
-      className="mt-[96px] flex w-full max-w-[1080px] flex-col items-center justify-center max-lg:m-0 max-lg:max-w-[530px] max-lg:pt-8"
+      className="mt-[96px] flex w-full max-w-[1167px] flex-col items-center justify-center max-lg:m-0 max-lg:max-w-[530px] max-lg:pt-8"
     >
       <div className="flex w-full flex-col max-lg:px-[14px]">
         <div className="flex w-full items-end justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
@@ -39,14 +39,14 @@ export default function Home() {
               alt="Decoracion de titulo"
               width={340}
               height={25}
-              className="hidden lg:block"
+              className="hidden size-auto lg:block"
             />
             <Image
               src={underline}
               alt="Decoracion de titulo"
               width={225}
               height={16}
-              className="hidden max-lg:block"
+              className="hidden size-auto max-lg:block"
             />
             <p className="my-[38px] text-[28px] font-light leading-[35px] max-lg:mb-[32px] max-lg:mt-[38px] max-lg:text-[18px] max-lg:leading-[23px]">
               Optimiza el dinero de tus campañas enfocándolas en el mejor perfil
@@ -59,7 +59,7 @@ export default function Home() {
             alt="lead filter"
             width={440}
             height={397}
-            className="max-lg:hidden"
+            className="size-auto max-lg:hidden"
           />
         </div>
         <p
@@ -80,7 +80,13 @@ export default function Home() {
             perfil, no cambiando las campañas o anuncios, sino cambiando el
             destino del tráfico generado
           </p>
-          <Image src={sceneTwo} alt="place holder" width={391} height={352} />
+          <Image
+            src={sceneTwo}
+            alt="place holder"
+            width={391}
+            height={352}
+            className="size-auto"
+          />
         </div>
         <div className="mb-[62px] flex w-full items-center  justify-between max-lg:my-8 max-lg:flex-col">
           <Image src={sceneThree} alt="place holder" width={390} height={352} />
@@ -95,24 +101,31 @@ export default function Home() {
             Finalmente, almacenamos tus leads en un CRM para que puedas
             consultar los reportes de forma fácil, rápida y eficiente.
           </p>
-          <Image src={sceneFour} alt="place holder" width={526} height={352} />
+          <Image
+            src={sceneFour}
+            alt="place holder"
+            width={526}
+            height={352}
+            className="h-[352px] w-[526px]"
+          />
         </div>
-        <div className="flex w-full items-center justify-center rounded-xl p-[71px] max-lg:p-0 lg:relative lg:z-[-2] lg:mb-[54px] lg:bg-[#fcfcfc]">
+        <div className="flex w-full items-center justify-center rounded-[32px] pb-[133px] pl-[75px] pr-[146px] pt-[183px] max-lg:p-0 lg:relative lg:z-[-2] lg:mb-[54px] lg:bg-[#fcfcfc]">
           <Image
             src={bg1}
             alt="background decoration"
-            width={1280}
-            className="absolute left-0 top-[-380px] z-[-1] max-lg:hidden"
+            fill
+            objectFit="cover"
+            className="z-[-1] rounded-[32px] max-lg:hidden"
           />
           <Image
             src={demoApp}
             alt="Demo onboarding"
-            width={590}
-            height={590}
+            width={476}
+            height={476}
             className="max-lg:hidden"
           />
-          <div className="ml-28 mt-[180px] flex w-full flex-col items-start justify-start max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
-            <h2 className="mb-[42px] text-[32px] font-semibold text-[#191A15]">
+          <div className="ml-[48px] flex w-full flex-col items-start justify-start max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
+            <h2 className="mb-[42px] text-[25px] font-semibold text-[#191A15]">
               ¿Cómo lo hacemos?
             </h2>
             <div className="flex items-start justify-start">
@@ -124,10 +137,10 @@ export default function Home() {
                 className="mr-4 max-lg:hidden"
               />
               <div className="mb-[42px] flex flex-col items-start justify-start">
-                <h3 className="text-[28px] font-bold text-primary-dark max-lg:text-[24px]">
+                <h3 className="text-[27px] font-bold text-primary-dark max-lg:text-[24px]">
                   Analizamos tus leads
                 </h3>
-                <p className="text-[18px] leading-[30px]">
+                <p className="text-[14px] leading-[30px]">
                   Procesamos tu información de forma personalizada por el tipo
                   de cliente objetivo y creamos una experiencia de adquisición
                   ajustada a tu objetivo comercial.
@@ -143,10 +156,10 @@ export default function Home() {
                 className="mr-4 max-lg:hidden"
               />
               <div className="mb-[42px] flex flex-col items-start justify-start">
-                <h3 className="text-[28px] font-bold text-primary-dark max-lg:text-[24px]">
+                <h3 className="text-[27px] font-bold text-primary-dark max-lg:text-[24px]">
                   Experiencia personalizada
                 </h3>
-                <p className="text-[18px] leading-[30px]">
+                <p className="text-[14px] leading-[30px]">
                   Creamos flujos de adquisición de datos cualitativos que nos
                   permiten ahorrar costos con una experiencia digital
                   personalizable.
@@ -162,10 +175,10 @@ export default function Home() {
                 className="mr-4 max-lg:hidden"
               />
               <div className="flex flex-col items-start justify-start">
-                <h3 className="text-[28px] font-bold text-primary-dark max-lg:text-[24px]">
+                <h3 className="text-[27px] font-bold text-primary-dark max-lg:text-[24px]">
                   Desarrollo a tu medida
                 </h3>
-                <p className="text-[18px] leading-[30px]">
+                <p className="text-[14px] leading-[30px]">
                   Aparte de desarrollar la estrategia, realizamos integraciones
                   con distintas tecnologías para recopilar los datos de todos
                   tus leads y separar los más valiosos.
@@ -175,15 +188,15 @@ export default function Home() {
           </div>
         </div>
         <div className="mb-[72px] flex w-full flex-col items-start justify-between lg:mt-[200px]">
-          <h2 className="w-full text-[32px] font-semibold text-[#191A15]">
+          <h2 className="w-full text-[27px] font-semibold text-[#191A15]">
             Esto encontrarás si trabajas con nuestro equipo
           </h2>
-          <p className="text-[18px] leading-[30px] max-lg:mt-[46px]">
+          <p className="text-[14px] leading-[30px] max-lg:mt-[46px]">
             Puedes elegir una o varias funcionalidades dentro de nuestra oferta
             para llegar más fácilmente a los leads que consagren tu negocio.
           </p>
         </div>
-        <div className="flex w-full max-lg:flex-col">
+        <div className="flex w-full max-w-[1080px] justify-between max-lg:flex-col">
           <div className="mb-[192px] mr-[18.5px] flex flex-col max-lg:m-0">
             <Card
               image={ux}

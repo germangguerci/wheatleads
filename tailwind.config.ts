@@ -18,6 +18,9 @@ module.exports = {
       },
     },
     extend: {
+      boxShadow: {
+        'card-md': '0px 14px 65.6px 0px #00000029',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

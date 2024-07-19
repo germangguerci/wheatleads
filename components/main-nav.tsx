@@ -10,25 +10,25 @@ import { usePathname } from 'next/navigation';
 
 function Logo() {
   return (
-    <div className="flex items-center">
+    <Link href="/" className="flex cursor-pointer items-center">
       <Image
         src={logo}
         alt="wheat leads logo"
         height="51"
         width="45"
-        className="mr-2 hidden lg:block"
+        className="mr-2 hidden size-auto lg:block"
       />
       <Image
         src={logoMobile}
         alt="wheat leads logo"
         height="51"
         width="45"
-        className="mr-2 block lg:hidden"
+        className="mr-2 block size-auto lg:hidden"
       />
       <h1 className="hidden text-[32px] font-light text-neutral-dark lg:block">
         <span className="font-bold text-primary-dark">Wheat </span>Leads
       </h1>
-    </div>
+    </Link>
   );
 }
 
