@@ -77,6 +77,6 @@
     body {
       @apply bg-background text-foreground;
       color: rgb(var(--foreground-rgb));
-      background-color: #d1f3d7;
+  background: linear-gradient(to bottom, #d1f3d7, white, white, white);
     }
   }

@@ -106,16 +106,15 @@ export default function Home() {
             alt="place holder"
             width={526}
             height={352}
-            className="h-[352px] w-[526px]"
+            className="h-auto w-[526px]"
           />
         </div>
-        <div className="flex w-full items-center justify-center rounded-[32px] pb-[133px] pl-[75px] pr-[146px] pt-[183px] max-lg:p-0 lg:relative lg:z-[-2] lg:mb-[54px] lg:bg-[#fcfcfc]">
+        <div className="flex w-full items-center justify-center rounded-[32px] pb-[133px] pl-[75px] pr-[146px] pt-[183px] max-lg:hidden max-lg:p-0 lg:relative lg:z-[-2] lg:mb-[54px] lg:bg-[#fcfcfc]">
           <Image
             src={bg1}
             alt="background decoration"
             fill
-            objectFit="cover"
-            className="z-[-1] rounded-[32px] max-lg:hidden"
+            className="z-[-1] rounded-[32px] object-cover max-lg:hidden"
           />
           <Image
             src={demoApp}

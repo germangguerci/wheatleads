@@ -1,22 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import logo from '@/public/logo-mobile.svg';
+import logo from '@/public/logo-dark.svg';
 
 function Logo() {
   return (
-    <div className="mb-8 flex items-center max-lg:mb-4">
-      <Image
-        src={logo}
-        alt="wheat leads logo"
-        height={43}
-        width={43}
-        className="mr-2 hidden lg:block"
-      />
-      <h1 className="text-[32px] font-light text-neutral-light">
-        <span className="font-bold text-[#54BD95]">Wheat</span>Leads
-      </h1>
-    </div>
+    <Image
+      src={logo}
+      alt="wheat leads logo"
+      height={43}
+      className="mb-9 mr-2 max-lg:mb-4 max-lg:mr-0"
+    />
   );
 }
 
@@ -30,7 +24,7 @@ export default function Footer() {
               <Logo />
               <div className="flex flex-col">
                 <p className="mb-4 leading-[30px]">
-                  Escíbenos a info@wheatleads.com
+                  Contáctanos a info@wheatleads.com
                 </p>
                 <p className="mb-4 leading-[30px]">+54 9 11 3668 2382</p>
                 <p className="leading-[30px]">Buenos Aires, Argentina</p>
