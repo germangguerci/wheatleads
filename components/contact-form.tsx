@@ -39,7 +39,7 @@ export function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    console.log('Hola', values);
   }
 
   return (

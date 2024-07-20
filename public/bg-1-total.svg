@@ -3,7 +3,7 @@
 <rect width="1167" height="777" rx="32" fill="white"/>
 </mask>
 <g mask="url(#mask0_2454_883)">
-<rect x="-77.9998" y="-243" width="1335" height="1127" rx="32" fill="#FCFCFC"/>
+<rect x="-77.9998" y="-243" width="1335" height="1127" rx="32" fill="#2D2D2D"/>
 <g opacity="0.5">
 <path d="M303.106 -122.952C342.144 -0.305886 495.449 143.824 750.652 38.0007" stroke="url(#paint0_linear_2454_883)" stroke-width="130.846"/>
 <path d="M766.381 30.1705C875.734 -23.3842 1120.44 -62.2261 1224.44 210.843" stroke="url(#paint1_linear_2454_883)" stroke-opacity="0.99" stroke-width="130.846"/>

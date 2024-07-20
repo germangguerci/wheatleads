@@ -110,7 +110,7 @@ export default function MainNav() {
   };
 
   return (
-    <nav className="relative flex w-full items-center justify-between bg-primary-dark px-4 py-[33px] lg:bg-transparent lg:py-[10px]">
+    <nav className="relative z-20 flex w-full items-center justify-between bg-primary-dark px-4 py-[33px] lg:bg-transparent lg:py-[10px]">
       <Logo />
       <DesktopMenu />
       <CtaButton className="hidden lg:block">Contratar ahora</CtaButton>

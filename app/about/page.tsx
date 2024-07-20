@@ -13,60 +13,58 @@ import three from '../../public/about-3.svg';
 export default function About() {
   return (
     <div className="flex w-full flex-col items-center justify-center bg-[#f3f3f3]">
-      <div className="flex w-full bg-transparent pb-[100px]">
-        <div className="relative flex w-full flex-col items-center justify-center rounded-br-[300px] bg-[#1c1e19] max-lg:rounded-br-[100px]">
-          <div className="flex w-full max-w-[1080px] flex-col items-start justify-center text-[#E7ECF3] max-lg:py-8">
-            <h2 className="mb-[100px] mt-[165px] max-w-[850px] text-[32px] leading-[40px] max-lg:mb-[50px] max-lg:mt-0 max-lg:px-4 max-lg:text-[24px] max-lg:leading-[30px]">
-              Sabemos cómo poner el foco sobre la clasificación del usuario y
-              <span className="font-bold">
-                {' '}
-                optimizamos la adquisición de los perfiles que mejor funcionan
-                para tu negocio
-              </span>
-            </h2>
-            <div className="mb-[91px] flex w-full justify-between max-lg:flex-col">
-              <h1 className="max-w-[441px] text-[36px] font-bold leading-[45px] max-lg:mb-4 max-lg:px-4 max-lg:text-[24px] max-lg:leading-[30px]">
-                Conoce los perfiles de este equipo ganador
-              </h1>
-              <p className="max-w-[542px] text-[26px] leading-[32px] max-lg:px-4 max-lg:text-[18px] max-lg:leading-[22px]">
-                Somos los especialistas que necesitas para optimizar todos tus
-                canales de difusión y atracción de clientes.
-              </p>
-            </div>
-            <div className="mb-[38px] flex w-full justify-start max-lg:mb-0 max-lg:flex-col max-lg:px-4">
-              <IconCard
-                image={code}
-                className="mr-4 max-lg:mb-4 max-lg:mr-0"
-                title="Full Stack Developer"
-              />
-              <IconCard
-                image={circleStack}
-                className="mr-4 max-lg:mb-4 max-lg:mr-0"
-                title="Specialist of data"
-              />
-              <IconCard
-                image={commandLine}
-                title="Tech lead"
-                className="max-lg:mb-4"
-              />
-            </div>
-            <div className="flex w-full justify-end pb-[109px] max-lg:mb-[120px] max-lg:flex-col max-lg:px-4">
-              <IconCard
-                image={lightBulb}
-                className="mr-4 max-lg:mb-4 max-lg:mr-0"
-                title="Product Designer"
-              />
-              <IconCard
-                image={paintBrush}
-                className="mr-4 max-lg:mb-4 max-lg:mr-0"
-                title="UX/UI Designer"
-              />
-              <IconCard image={starIcon} title="Content Strategy" />
-            </div>
+      <div className="relative flex w-full flex-col items-center justify-center rounded-br-[300px] bg-[#1c1e19] max-lg:rounded-br-[100px]">
+        <div className="flex w-full max-w-[1080px] flex-col items-start justify-center text-[#E7ECF3] max-lg:py-8">
+          <h2 className="mb-[100px] mt-[165px] max-w-[850px] text-[32px] leading-[40px] max-lg:mb-[50px] max-lg:mt-0 max-lg:px-4 max-lg:text-[24px] max-lg:leading-[30px]">
+            Sabemos cómo poner el foco sobre la clasificación del usuario y
+            <span className="font-bold">
+              {' '}
+              optimizamos la adquisición de los perfiles que mejor funcionan
+              para tu negocio
+            </span>
+          </h2>
+          <div className="mb-[91px] flex w-full justify-between max-lg:flex-col">
+            <h1 className="max-w-[441px] text-[36px] font-bold leading-[45px] max-lg:mb-4 max-lg:px-4 max-lg:text-[24px] max-lg:leading-[30px]">
+              Conoce los perfiles de este equipo ganador
+            </h1>
+            <p className="max-w-[542px] text-[26px] leading-[32px] max-lg:px-4 max-lg:text-[18px] max-lg:leading-[22px]">
+              Somos los especialistas que necesitas para optimizar todos tus
+              canales de difusión y atracción de clientes.
+            </p>
+          </div>
+          <div className="mb-[38px] flex w-full justify-start max-lg:mb-0 max-lg:flex-col max-lg:px-4">
+            <IconCard
+              image={code}
+              className="mr-4 max-lg:mb-4 max-lg:mr-0"
+              title="Full Stack Developer"
+            />
+            <IconCard
+              image={circleStack}
+              className="mr-4 max-lg:mb-4 max-lg:mr-0"
+              title="Specialist of data"
+            />
+            <IconCard
+              image={commandLine}
+              title="Tech lead"
+              className="max-lg:mb-4"
+            />
+          </div>
+          <div className="flex w-full justify-end pb-[109px] max-lg:flex-col max-lg:px-4 max-lg:pb-[54px]">
+            <IconCard
+              image={lightBulb}
+              className="mr-4 max-lg:mb-4 max-lg:mr-0"
+              title="Product Designer"
+            />
+            <IconCard
+              image={paintBrush}
+              className="mr-4 max-lg:mb-4 max-lg:mr-0"
+              title="UX/UI Designer"
+            />
+            <IconCard image={starIcon} title="Content Strategy" />
           </div>
         </div>
       </div>
-      <div className="relative flex w-full max-w-[1080px] flex-col items-center max-lg:px-4">
+      <div className="relative flex w-full max-w-[1080px] flex-col items-center pt-[100px] max-lg:px-4 max-lg:pt-[70px]">
         <div className="flex flex-col items-center">
           <p className=" text-[28px] leading-[35px] text-[#191A15] max-lg:text-[18px] max-lg:leading-[23px]">
             Al trabajar con nuestro equipo tendrás la oportunidad de ser parte

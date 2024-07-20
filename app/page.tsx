@@ -109,7 +109,7 @@ export default function Home() {
             className="h-auto w-[526px]"
           />
         </div>
-        <div className="flex w-full items-center justify-center rounded-[32px] pb-[133px] pl-[75px] pr-[146px] pt-[183px] max-lg:hidden max-lg:p-0 lg:relative lg:z-[-2] lg:mb-[54px] lg:bg-[#fcfcfc]">
+        <div className="flex w-full items-center justify-center rounded-[32px] pb-[133px] pl-[75px] pr-[146px] pt-[183px] max-lg:hidden max-lg:p-0 lg:relative lg:z-[-2] lg:bg-[#fcfcfc]">
           <Image
             src={bg1}
             alt="background decoration"
@@ -123,8 +123,8 @@ export default function Home() {
             height={476}
             className="max-lg:hidden"
           />
-          <div className="ml-[48px] flex w-full flex-col items-start justify-start max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
-            <h2 className="mb-[42px] text-[25px] font-semibold text-[#191A15]">
+          <div className="ml-[48px] flex w-full flex-col items-start justify-start text-[#FCFCFC] max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
+            <h2 className="mb-[42px] text-[25px] font-semibold">
               ¿Cómo lo hacemos?
             </h2>
             <div className="flex items-start justify-start">
@@ -136,7 +136,7 @@ export default function Home() {
                 className="mr-4 max-lg:hidden"
               />
               <div className="mb-[42px] flex flex-col items-start justify-start">
-                <h3 className="text-[27px] font-bold text-primary-dark max-lg:text-[24px]">
+                <h3 className="text-[27px] font-bold text-primary-shiny max-lg:text-[24px]">
                   Analizamos tus leads
                 </h3>
                 <p className="text-[14px] leading-[30px]">
@@ -155,7 +155,7 @@ export default function Home() {
                 className="mr-4 max-lg:hidden"
               />
               <div className="mb-[42px] flex flex-col items-start justify-start">
-                <h3 className="text-[27px] font-bold text-primary-dark max-lg:text-[24px]">
+                <h3 className="text-[27px] font-bold text-primary-shiny max-lg:text-[24px]">
                   Experiencia personalizada
                 </h3>
                 <p className="text-[14px] leading-[30px]">
@@ -174,7 +174,7 @@ export default function Home() {
                 className="mr-4 max-lg:hidden"
               />
               <div className="flex flex-col items-start justify-start">
-                <h3 className="text-[27px] font-bold text-primary-dark max-lg:text-[24px]">
+                <h3 className="text-[27px] font-bold text-primary-shiny max-lg:text-[24px]">
                   Desarrollo a tu medida
                 </h3>
                 <p className="text-[14px] leading-[30px]">
@@ -186,7 +186,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mb-[72px] flex w-full flex-col items-start justify-between lg:mt-[200px]">
+        <div className="mb-[72px] flex w-full flex-col items-start justify-between lg:mt-[144px]">
           <h2 className="w-full text-[27px] font-semibold text-[#191A15]">
             Esto encontrarás si trabajas con nuestro equipo
           </h2>

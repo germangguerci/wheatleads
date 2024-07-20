@@ -33,6 +33,7 @@ module.exports = {
           light: '#4DC66B',
           dark: '#064D47',
           medium: '#30946D',
+          shiny: '#4DC66B',
         },
         neutral: {
           light: '#FFFFFF',
