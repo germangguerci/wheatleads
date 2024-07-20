@@ -31,9 +31,9 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex flex-col max-lg:items-center">
-              <h3 className="mb-[29px] font-bold max-lg:mb-[18px]">
+              <h1 className="mb-[29px] font-bold max-lg:mb-[18px]">
                 Mapa del sitio
-              </h3>
+              </h1>
               <Link className="mb-[18px]" href="/">
                 Inicio
               </Link>
