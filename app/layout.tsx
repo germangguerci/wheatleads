@@ -22,7 +22,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`${inter.className} flex w-full flex-col items-center justify-center`}
       >
-        <header className="flex w-full max-w-screen-xl">
+        <header className="flex w-full">
           <MainNav />
         </header>
         <main className="flex size-full flex-col items-center justify-start p-0 text-[#191A15]">

@@ -9,6 +9,7 @@ import Card from '@/components/ui/card';
 import one from '../../public/about-1.svg';
 import two from '../../public/about-2.svg';
 import three from '../../public/about-3.svg';
+import Contact from '@/components/contact';
 
 export default function About() {
   return (
@@ -101,6 +102,7 @@ export default function About() {
           />
         </div>
       </div>
+      <Contact />
     </div>
   );
 }

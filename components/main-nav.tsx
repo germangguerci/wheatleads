@@ -15,7 +15,8 @@ function Logo() {
         src={logo}
         alt="wheat leads logo"
         height={44}
-        className="mr-2 hidden size-auto lg:block"
+        width={245}
+        className="mr-2 hidden size-auto h-[44px] w-[245px] lg:block"
       />
       <Image
         src={logoMobile}
@@ -51,7 +52,7 @@ function MobileMenu({ isOpen }: { isOpen: boolean }) {
   const NavLinks = [
     { name: 'Inicio', path: '/' },
     { name: 'Sobre nosotros', path: '/about' },
-    { name: 'Propuesta', path: '/#contact' },
+    { name: 'Propuesta', path: '/proposal' },
   ];
   const pathname = usePathname();
   const isActive = (path: string) => path === pathname;
@@ -70,9 +71,11 @@ function MobileMenu({ isOpen }: { isOpen: boolean }) {
             </li>
           );
         })}
-        <CtaButton className="border border-solid border-[white]">
-          Contratar ahora
-        </CtaButton>
+        <Link href="#contact">
+          <CtaButton className="border border-solid border-[white]">
+            Contratar ahora
+          </CtaButton>
+        </Link>
       </ul>
     </div>
   );
@@ -82,7 +85,7 @@ function DesktopMenu() {
   const NavLinks = [
     { name: 'Inicio', path: '/' },
     { name: 'Sobre nosotros', path: '/about' },
-    { name: 'Propuesta', path: '/#contact' },
+    { name: 'Propuesta', path: '/proposal' },
   ];
   const pathname = usePathname();
   const isActive = (path: string) => path === pathname;
@@ -110,12 +113,16 @@ export default function MainNav() {
   };
 
   return (
-    <nav className="relative z-20 flex w-full items-center justify-between bg-primary-dark px-4 py-[33px] lg:bg-transparent lg:py-[10px]">
-      <Logo />
-      <DesktopMenu />
-      <CtaButton className="hidden lg:block">Contratar ahora</CtaButton>
-      <HamburgerMenu onClick={toggleMenu} />
-      <MobileMenu isOpen={menuOpen} />
-    </nav>
+    <div className="flex w-full justify-center bg-primary-dark from-[#d9f2db] to-[#fdf6f6] lg:bg-gradient-to-r">
+      <nav className="relative z-20 flex w-full max-w-screen-xl items-center justify-between px-4 py-[17px]">
+        <Logo />
+        <DesktopMenu />
+        <Link href="#contact">
+          <CtaButton className="hidden lg:block">Contratar ahora</CtaButton>
+        </Link>
+        <HamburgerMenu onClick={toggleMenu} />
+        <MobileMenu isOpen={menuOpen} />
+      </nav>
+    </div>
   );
 }

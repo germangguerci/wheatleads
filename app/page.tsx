@@ -18,6 +18,7 @@ import dev from '../public/ilustracion-dev.svg';
 import easy from '../public/easy.svg';
 import bg1 from '../public/bg-1-total.svg';
 import Contact from '@/components/contact';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -52,7 +53,9 @@ export default function Home() {
               Optimiza el dinero de tus campañas enfocándolas en el mejor perfil
               de cliente para tu negocio.
             </p>
-            <CtaButton className="w-[242px]">Contratar ahora</CtaButton>
+            <Link href="#contact">
+              <CtaButton className="w-[242px]">Contratar ahora</CtaButton>
+            </Link>
           </div>
           <Image
             src={sceneOne}
