@@ -25,7 +25,7 @@ export default function Home() {
       id="home"
       className="mt-[96px] flex w-full max-w-[1167px] flex-col items-center justify-center max-lg:m-0 max-lg:max-w-[530px] max-lg:pt-8"
     >
-      <div className="flex w-full flex-col max-lg:px-[14px]">
+      <div className="flex w-full flex-col items-center max-lg:px-[14px]">
         <div className="flex w-full items-end justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
           <div className="flex w-full max-w-[530px] flex-col items-start justify-start">
             <h1 className="text-[46px] font-bold leading-[57px] text-[#191A15] max-lg:text-[28px] max-lg:leading-[35px]">
@@ -38,15 +38,15 @@ export default function Home() {
               src={underline}
               alt="Decoracion de titulo"
               width={340}
-              height={25}
-              className="hidden size-auto lg:block"
+              height={34}
+              className="hidden h-[34px] w-[340px] lg:block"
             />
             <Image
               src={underline}
               alt="Decoracion de titulo"
               width={225}
-              height={16}
-              className="hidden size-auto max-lg:block"
+              height={21}
+              className="hidden h-[21px] w-[225px] max-lg:block"
             />
             <p className="my-[38px] text-[28px] font-light leading-[35px] max-lg:mb-[32px] max-lg:mt-[38px] max-lg:text-[18px] max-lg:leading-[23px]">
               Optimiza el dinero de tus campañas enfocándolas en el mejor perfil
@@ -57,9 +57,9 @@ export default function Home() {
           <Image
             src={sceneOne}
             alt="lead filter"
-            width={440}
-            height={397}
-            className="size-auto max-lg:hidden"
+            width={506}
+            height={458}
+            className="h-[458px] w-[506px] max-lg:hidden"
           />
         </div>
         <p
@@ -85,7 +85,7 @@ export default function Home() {
             alt="place holder"
             width={391}
             height={352}
-            className="size-auto"
+            className="mr-[120px] h-[352px] w-[391px]"
           />
         </div>
         <div className="mb-[62px] flex w-full items-center  justify-between max-lg:my-8 max-lg:flex-col">
@@ -106,7 +106,7 @@ export default function Home() {
             alt="place holder"
             width={526}
             height={352}
-            className="h-auto w-[526px]"
+            className="ml-[22px] h-[352px] w-[526px]"
           />
         </div>
         <div className="flex w-full items-center justify-center rounded-[32px] pb-[133px] pl-[75px] pr-[146px] pt-[183px] max-lg:hidden max-lg:p-0 lg:relative lg:z-[-2] lg:bg-[#fcfcfc]">
@@ -121,7 +121,7 @@ export default function Home() {
             alt="Demo onboarding"
             width={476}
             height={476}
-            className="max-lg:hidden"
+            className="size-[476px] max-lg:hidden"
           />
           <div className="ml-[48px] flex w-full flex-col items-start justify-start text-[#FCFCFC] max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
             <h2 className="mb-[42px] text-[25px] font-semibold">

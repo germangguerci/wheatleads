@@ -20,7 +20,7 @@ export default function IconCard({
         width={102}
         height={102}
         alt={`imagen ${title}`}
-        className="max-lg:mr-4 max-lg:w-[46px]"
+        className="size-[102px] max-lg:mr-4 max-lg:w-[46px]"
       />
       <p className="text-center text-[24px] leading-[30px] text-white max-lg:text-[18px]">
         {title}
