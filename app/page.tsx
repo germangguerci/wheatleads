@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import underline from '../public/underline.svg';
+import demoApp from '../public/demoapp.png';
 import CtaButton from '../components/ui/cta-button';
 import sceneOne from '../public/ilustracion-1.svg';
 import sceneTwo from '../public/ilustracion-2.svg';
@@ -15,9 +16,9 @@ import cpg from '../public/ilustracion-cpg.svg';
 import cc from '../public/ilustracion-cc.svg';
 import dev from '../public/ilustracion-dev.svg';
 import easy from '../public/easy.svg';
+import bg1 from '../public/bg-1-total.svg';
 import Contact from '@/components/contact';
 import Link from 'next/link';
-import PhoneLottie from '@/components/phoneLottie';
 
 export default function Home() {
   return (
@@ -87,7 +88,7 @@ export default function Home() {
             alt="place holder"
             width={391}
             height={352}
-            className="h-[352px] w-[391px] lg:mr-[120px]"
+            className="mr-[120px] h-[352px] w-[391px]"
           />
         </div>
         <div className="mb-[62px] flex w-full items-center  justify-between max-lg:my-8 max-lg:flex-col">
@@ -112,7 +113,19 @@ export default function Home() {
           />
         </div>
         <div className="flex w-full items-center justify-center rounded-[32px] pb-[133px] pl-[75px] pr-[146px] pt-[183px] max-lg:hidden max-lg:p-0 lg:relative lg:z-[-2] lg:bg-[#fcfcfc]">
-          <PhoneLottie />
+          <Image
+            src={bg1}
+            alt="background decoration"
+            fill
+            className="z-[-1] rounded-[32px] object-cover max-lg:hidden"
+          />
+          <Image
+            src={demoApp}
+            alt="Demo onboarding"
+            width={476}
+            height={476}
+            className="size-[476px] max-lg:hidden"
+          />
           <div className="ml-[48px] flex w-full flex-col items-start justify-start text-[#FCFCFC] max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
             <h2 className="mb-[42px] text-[25px] font-semibold">
               ¿Cómo lo hacemos?
