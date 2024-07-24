@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import underline from '../public/underline.svg';
-import demoApp from '../public/demoapp.png';
 import CtaButton from '../components/ui/cta-button';
 import sceneOne from '../public/ilustracion-1.svg';
 import sceneTwo from '../public/ilustracion-2.svg';
@@ -19,6 +18,7 @@ import easy from '../public/easy.svg';
 import bg1 from '../public/bg-1-total.svg';
 import Contact from '@/components/contact';
 import Link from 'next/link';
+import PhoneLottie from '@/components/phoneLottie';
 
 export default function Home() {
   return (
@@ -119,13 +119,14 @@ export default function Home() {
             fill
             className="z-[-1] rounded-[32px] object-cover max-lg:hidden"
           />
-          <Image
+          {/* <Image
             src={demoApp}
             alt="Demo onboarding"
             width={476}
             height={476}
             className="size-[476px] max-lg:hidden"
-          />
+          /> */}
+          <PhoneLottie />
           <div className="ml-[48px] flex w-full flex-col items-start justify-start text-[#FCFCFC] max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
             <h2 className="mb-[42px] text-[25px] font-semibold">
               ¿Cómo lo hacemos?
