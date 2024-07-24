@@ -18,7 +18,9 @@ import easy from '../public/easy.svg';
 import bg1 from '../public/bg-1-total.svg';
 import Contact from '@/components/contact';
 import Link from 'next/link';
-import PhoneLottie from '@/components/phoneLottie';
+import dynamic from 'next/dynamic';
+
+const PhoneLottie = dynamic(() => import('@/components/phoneLottie'));
 
 export default function Home() {
   return (

@@ -16,5 +16,5 @@ export default function PhoneLottie() {
     });
   }, []);
 
-  return <div ref={animationContainer} />;
+  return <div ref={animationContainer} className="max-lg:hidden" />;
 }
