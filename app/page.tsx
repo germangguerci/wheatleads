@@ -20,7 +20,9 @@ import Contact from '@/components/contact';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
-const PhoneLottie = dynamic(() => import('@/components/phoneLottie'));
+const PhoneLottie = dynamic(() => import('@/components/phoneLottie'), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
