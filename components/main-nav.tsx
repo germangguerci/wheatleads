@@ -113,7 +113,7 @@ export default function MainNav() {
   };
 
   return (
-    <div className="flex w-full justify-center bg-primary-dark from-[#d9f2db] to-[#fdf6f6] lg:bg-gradient-to-r">
+    <div className="flex w-full justify-center bg-primary-dark lg:bg-[#f6f6f6]">
       <nav className="relative z-20 flex w-full max-w-screen-xl items-center justify-between px-4 py-[17px]">
         <Logo />
         <DesktopMenu />

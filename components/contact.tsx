@@ -9,13 +9,13 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="relative z-[1] flex justify-center rounded-t-[50px] bg-[#2D2D2D] px-[100px] py-[127px] text-[18px] leading-[22px] text-[#F9F8FE] max-lg:rounded-t-[16px] max-lg:bg-[#191A15] max-lg:px-4 max-lg:pt-8"
+      className="relative z-[1] flex w-full justify-center rounded-t-[50px] bg-[#2D2D2D] px-[100px] py-[127px] text-[18px] leading-[22px] text-[#F9F8FE] max-lg:rounded-t-[16px] max-lg:bg-[#191A15] max-lg:px-4 max-lg:pt-8"
     >
       <Image
         src={formBgDecoration}
         alt="background decoration"
-        width={1483}
-        className="absolute left-0 top-0 z-[2] max-lg:hidden"
+        width={1920}
+        className="absolute left-0 top-0 z-[2] w-full max-lg:hidden"
       />
       <div className="z-[3] flex w-full max-w-[1080px] flex-col">
         <h1 className="text-center text-[50px] font-bold leading-[73px] max-lg:text-left max-lg:text-[28px] max-lg:leading-[32px]">

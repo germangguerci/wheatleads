@@ -24,9 +24,9 @@ export default function Home() {
   return (
     <div
       id="home"
-      className="mt-[96px] flex w-full max-w-[1167px] flex-col items-center justify-center max-lg:m-0 max-lg:max-w-[530px] max-lg:pt-8"
+      className="mt-[96px] flex w-full flex-col items-center justify-center max-lg:m-0 max-lg:max-w-[530px] max-lg:pt-8"
     >
-      <div className="flex w-full flex-col items-center max-lg:px-[14px]">
+      <div className="flex w-full max-w-[1167px] flex-col items-center max-lg:px-[14px]">
         <div className="flex w-full items-end justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
           <div className="flex w-full max-w-[530px] flex-col items-start justify-start">
             <h1 className="text-[46px] font-bold leading-[57px] text-[#191A15] max-lg:text-[28px] max-lg:leading-[35px]">
@@ -88,7 +88,7 @@ export default function Home() {
             alt="place holder"
             width={391}
             height={352}
-            className="mr-[120px] h-[352px] w-[391px]"
+            className="mr-[120px] h-[352px] w-[391px] max-lg:mr-0"
           />
         </div>
         <div className="mb-[62px] flex w-full items-center  justify-between max-lg:my-8 max-lg:flex-col">

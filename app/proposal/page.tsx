@@ -1,6 +1,7 @@
 import CtaButton from '@/components/ui/cta-button';
 import sample from '../../public/cardholder.svg';
 import Image from 'next/image';
+import Contact from '@/components/contact';
 
 export default function Proposal() {
   return (
@@ -30,6 +31,7 @@ export default function Proposal() {
         Haz que tu negocio tenga una buena temporada de cosecha con todos estos
         formatos.
       </h2>
+      <Contact />
     </div>
   );
 }
