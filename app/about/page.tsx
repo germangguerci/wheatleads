@@ -10,13 +10,16 @@ import one from '../../public/about-1.svg';
 import two from '../../public/about-2.svg';
 import three from '../../public/about-3.svg';
 import Contact from '@/components/contact';
+import woman from '../../public/woman.svg';
+import man from '../../public/man.svg';
+import Image from 'next/image';
 
 export default function About() {
   return (
     <div className="flex w-full flex-col items-center justify-center bg-[#f3f3f3]">
-      <div className="relative flex w-full flex-col items-center justify-center rounded-br-[300px] bg-[#1c1e19] max-lg:rounded-br-[100px]">
-        <div className="flex w-full max-w-[1080px] flex-col items-start justify-center text-[#E7ECF3] max-lg:py-8">
-          <h2 className="mb-[100px] mt-[165px] max-w-[850px] text-[32px] leading-[40px] max-lg:mb-[50px] max-lg:mt-0 max-lg:px-4 max-lg:text-[24px] max-lg:leading-[30px]">
+      <div className=" flex w-full flex-col items-center justify-center rounded-br-[300px] bg-[#1c1e19] max-lg:rounded-br-[100px]">
+        <div className="relative flex w-full max-w-[1080px] flex-col items-center justify-center text-[#E7ECF3] max-lg:items-start max-lg:py-8">
+          <h2 className="mb-[245px] mt-[224px] max-w-screen-sm text-center text-[32px] leading-[40px] max-lg:mb-[50px] max-lg:mt-0 max-lg:px-4 max-lg:text-left max-lg:text-[24px] max-lg:leading-[30px]">
             Sabemos cómo poner el foco sobre la clasificación del usuario y
             <span className="font-bold">
               {' '}
@@ -24,6 +27,20 @@ export default function About() {
               para tu negocio
             </span>
           </h2>
+          <Image
+            src={man}
+            alt="man ilustration"
+            width={398}
+            height={466}
+            className="absolute left-[-50px] top-[40px] h-[466px] w-[375px] max-lg:hidden"
+          />
+          <Image
+            src={woman}
+            alt="woman ilustration"
+            width={375}
+            height={466}
+            className="absolute right-[-50px] top-[40px] h-[466px] w-[375px] max-lg:hidden"
+          />
           <div className="mb-[91px] flex w-full justify-between max-lg:flex-col">
             <h1 className="max-w-[441px] text-[36px] font-bold leading-[45px] max-lg:mb-4 max-lg:px-4 max-lg:text-[24px] max-lg:leading-[30px]">
               Conoce los perfiles de este equipo ganador

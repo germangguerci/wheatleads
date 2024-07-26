@@ -122,9 +122,9 @@ export default function Home() {
           <Image
             src={demoApp}
             alt="Demo onboarding"
-            width={476}
-            height={476}
-            className="size-[476px] max-lg:hidden"
+            width={428}
+            height={486}
+            className="h-[486px] w-[428px] max-lg:hidden"
           />
           <div className="ml-[48px] flex w-full flex-col items-start justify-start text-[#FCFCFC] max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
             <h2 className="mb-[42px] text-[25px] font-semibold">

@@ -2,12 +2,17 @@ import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import type { HTMLAttributes } from 'react';
 import { cn } from '@/lib/utils';
+import CtaButton from './cta-button';
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
   image: StaticImageData;
   title: string;
   description: string;
   wImage?: number;
+  cta?: {
+    onClick: () => void;
+    text: string;
+  };
 }
 
 export default function Card({
@@ -16,6 +21,7 @@ export default function Card({
   title,
   description,
   className,
+  cta,
   ...props
 }: CardProps) {
   const styles =
@@ -27,6 +33,13 @@ export default function Card({
         {title}
       </h1>
       <p className="mt-4 font-[18px] leading-[30px]">{description}</p>
+      {cta && (
+        <div className="mt-4 flex w-full">
+          <CtaButton className="w-[174px] max-lg:w-full" onClick={cta.onClick}>
+            {cta.text}
+          </CtaButton>
+        </div>
+      )}
     </div>
   );
 }
