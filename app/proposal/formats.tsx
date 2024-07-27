@@ -2,6 +2,7 @@
 
 import Card from '@/components/ui/card';
 import sample from '../../public/cardholder.svg';
+import DialogCard from '@/components/ui/dialog-card';
 
 export default function Formats() {
   const ctaCard = {
@@ -12,19 +13,23 @@ export default function Formats() {
   };
 
   return (
-    <div className="flex w-full max-w-[1080px] justify-between max-lg:flex-col">
+    <div className="flex w-full max-w-[1080px] justify-between max-lg:flex-col max-lg:p-4 lg:mb-[121px]">
       <div className="mb-[192px] mr-[18.5px] flex flex-col max-lg:m-0">
-        <Card
+        <DialogCard
           image={sample}
-          title="Diseño UX/UI"
-          description="Creamos la experiencia para tus usuarios 100% personalizada sobre tus públicos objetivos."
+          title="Quiz de adquisición"
+          description="Este flujo está diseñado para que tus leads avancen hacia la oferta final en la medida que responden con un simple clic."
           className="mb-[42px] bg-[#e3e3e3]"
-          cta={ctaCard}
-        />
+          ctaTitle="Conocer más"
+        >
+          <div className="flex">
+            <h1>Hello</h1>
+          </div>
+        </DialogCard>
         <Card
           image={sample}
-          title="Integración con Contact Center"
-          description="Creamos un funnel de conversión y realizamos seguimiento continuo para iterar  una experiencial 100% medida."
+          title="Onboarding de producto"
+          description="Cuentale a las personas todo el potencial de tu solución app o plataforma web en 5 pantallas. Ideal para lanzamiento de producto."
           className="bg-[#e3e3e3]"
           cta={ctaCard}
         />
@@ -33,14 +38,14 @@ export default function Formats() {
         <Card
           className="mb-[42px] bg-[#e3e3e3] max-lg:mt-[42px]"
           image={sample}
-          title="Desarrollo de la aplicación"
-          description="Desarrollamos aplicaciones a medida, optimizadas para rendimiento y escalabilidad, garantizando una experiencia de usuario excepcional."
+          title="Quiz de configuración"
+          description="Este flujo ayuda a tus usuarios a configurar sus intereses antes de usar tu app o plataforma por primera vez."
           cta={ctaCard}
         />
         <Card
           image={sample}
-          title="Optimización de campañas"
-          description="Creamos un funnel de conversión y realizamos seguimiento continuo para iterar  una experiencial 100% medida."
+          title="Adquisición en MP5"
+          description="Este formato interactivo es la última tendencia en adquisición de suscripciones para publicidad web o en apps. Haz la diferencia en la demostración de tu producto con videos animados y audios con controles en una sola pantalla."
           className="bg-[#e3e3e3]"
           cta={ctaCard}
         />
