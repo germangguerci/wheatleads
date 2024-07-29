@@ -7,7 +7,7 @@ import CtaButton from './ui/cta-button';
 
 export default function Contact() {
   return (
-    <div
+    <section
       id="contact"
       className="relative z-[1] flex w-full justify-center rounded-t-[50px] bg-[#2D2D2D] px-[100px] py-[127px] text-[18px] leading-[22px] text-[#F9F8FE] max-lg:rounded-t-[16px] max-lg:bg-[#191A15] max-lg:px-4 max-lg:pt-8"
     >
@@ -52,6 +52,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

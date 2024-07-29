@@ -22,13 +22,13 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div
+    <main
       id="home"
       className="mt-[96px] flex w-full flex-col items-center justify-center max-lg:m-0 max-lg:max-w-[530px] max-lg:pt-8"
     >
       <div className="flex w-full max-w-[1167px] flex-col items-center max-lg:px-[14px]">
-        <div className="flex w-full items-end justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
-          <div className="flex w-full max-w-[530px] flex-col items-start justify-start">
+        <header className="flex w-full items-end justify-between max-lg:flex-col max-lg:items-center max-lg:justify-center">
+          <section className="flex w-full max-w-[530px] flex-col items-start justify-start">
             <h1 className="text-[46px] font-bold leading-[57px] text-[#191A15] max-lg:text-[28px] max-lg:leading-[35px]">
               Separamos la paja del trigo,{' '}
               <span className="text-primary-dark">
@@ -56,7 +56,7 @@ export default function Home() {
             <Link href="#contact">
               <CtaButton className="w-[242px]">Contratar ahora</CtaButton>
             </Link>
-          </div>
+          </section>
           <Image
             src={sceneOne}
             alt="lead filter"
@@ -64,7 +64,7 @@ export default function Home() {
             height={458}
             className="h-[458px] w-[506px] max-lg:hidden"
           />
-        </div>
+        </header>
         <p
           className="mb-[108px] mt-[116px] w-full max-w-[898px] text-center text-[28px] font-normal max-lg:my-[64px]
         max-lg:text-left max-lg:text-[18px]"
@@ -77,7 +77,7 @@ export default function Home() {
             datos de contacto.
           </span>
         </p>
-        <div className="mb-[62px] flex w-full items-center justify-between max-lg:mb-0 max-lg:flex-col-reverse">
+        <section className="mb-[62px] flex w-full items-center justify-between max-lg:mb-0 max-lg:flex-col-reverse">
           <p className="max-w-[592px] text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
             Encontramos la forma de optimizar las campañas en función del
             perfil, no cambiando las campañas o anuncios, sino cambiando el
@@ -90,7 +90,7 @@ export default function Home() {
             height={352}
             className="mr-[120px] h-[352px] w-[391px] max-lg:mr-0"
           />
-        </div>
+        </section>
         <div className="mb-[62px] flex w-full items-center  justify-between max-lg:my-8 max-lg:flex-col">
           <Image src={sceneThree} alt="place holder" width={390} height={352} />
           <p className="max-w-[592px] text-[26px] font-normal max-lg:my-8 max-lg:text-[18px]">
@@ -112,7 +112,7 @@ export default function Home() {
             className="ml-[22px] h-[352px] w-[526px]"
           />
         </div>
-        <div className="flex w-full items-center justify-center rounded-[32px] pb-[133px] pl-[75px] pr-[146px] pt-[183px] max-lg:hidden max-lg:p-0 lg:relative lg:z-[-2] lg:bg-[#fcfcfc]">
+        <section className="flex w-full items-center justify-center rounded-[32px] pb-[133px] pl-[75px] pr-[146px] pt-[183px] max-lg:hidden max-lg:p-0 lg:relative lg:z-[-2] lg:bg-[#fcfcfc]">
           <Image
             src={bg1}
             alt="background decoration"
@@ -126,7 +126,7 @@ export default function Home() {
             height={486}
             className="h-[486px] w-[428px] max-lg:hidden"
           />
-          <div className="ml-[48px] flex w-full flex-col items-start justify-start text-[#FCFCFC] max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
+          <article className="ml-[48px] flex w-full flex-col items-start justify-start text-[#FCFCFC] max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
             <h2 className="mb-[42px] text-[25px] font-semibold">
               ¿Cómo lo hacemos?
             </h2>
@@ -187,8 +187,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
         <div className="mb-[72px] flex w-full flex-col items-start justify-between lg:mt-[144px]">
           <h2 className="w-full text-[27px] font-semibold text-[#191A15]">
             Esto encontrarás si trabajas con nuestro equipo
@@ -198,7 +198,7 @@ export default function Home() {
             para llegar más fácilmente a los leads que consagren tu negocio.
           </p>
         </div>
-        <div className="flex w-full max-w-[1080px] justify-between max-lg:flex-col">
+        <section className="flex w-full max-w-[1080px] justify-between max-lg:flex-col">
           <div className="mb-[192px] mr-[18.5px] flex flex-col max-lg:m-0">
             <Card
               image={ux}
@@ -226,9 +226,9 @@ export default function Home() {
               description="Creamos un funnel de conversión y realizamos seguimiento continuo para iterar  una experiencial 100% medida."
             />
           </div>
-        </div>
-        <div className="my-[180px] flex w-full max-lg:my-8 max-lg:mb-[64px] max-lg:flex-col-reverse">
-          <div className="flex flex-col">
+        </section>
+        <section className="my-[180px] flex w-full max-lg:my-8 max-lg:mb-[64px] max-lg:flex-col-reverse">
+          <article className="flex flex-col">
             <h2 className="mb-[46px] text-[50px] font-bold leading-[60px] max-lg:text-[32px] max-lg:leading-[39px]">
               Esto es sencillo, sin dolores de cabeza
             </h2>
@@ -276,7 +276,7 @@ export default function Home() {
               </li>
             </ul>
             <CtaButton className="w-[191px]">Contratar ahora</CtaButton>
-          </div>
+          </article>
           <Image
             src={easy}
             alt="llaves en mano"
@@ -284,9 +284,9 @@ export default function Home() {
             height={373}
             className="max-lg:mb-4"
           />
-        </div>
+        </section>
       </div>
       <Contact />
-    </div>
+    </main>
   );
 }

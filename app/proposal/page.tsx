@@ -7,9 +7,9 @@ import Link from 'next/link';
 
 export default function Proposal() {
   return (
-    <div className="flex w-full flex-col items-center justify-center bg-[#fcfcfc]">
-      <div className="flex max-w-[1082px] items-center justify-center max-lg:p-4">
-        <div className="my-[100px] flex w-full items-center justify-between max-lg:my-[32px] max-lg:flex-col-reverse">
+    <main className="flex w-full flex-col items-center justify-center bg-[#fcfcfc]">
+      <header className="flex max-w-[1082px] items-center justify-center max-lg:p-4">
+        <section className="my-[100px] flex w-full items-center justify-between max-lg:my-[32px] max-lg:flex-col-reverse">
           <div className="flex flex-col items-start">
             <h1 className="mb-8 text-[28px] font-normal text-primary-dark max-lg:text-[18px]">
               Caso de éxito
@@ -29,13 +29,13 @@ export default function Proposal() {
             width={578}
             className="mr-[34px] h-[317px] w-[578px] max-lg:mb-[33px] max-lg:h-[152px] max-lg:w-[277px]"
           />
-        </div>
-      </div>
+        </section>
+      </header>
       <p className="mb-[92px] max-w-[898px] text-center text-[32px] max-lg:mb-8 max-lg:p-4 max-lg:text-[18px]">
         Maximiza la calidad de tus leads con estos efectivos formatos.
       </p>
       <Formats />
       <Contact />
-    </div>
+    </main>
   );
 }

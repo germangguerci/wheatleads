@@ -2,11 +2,11 @@ import { Button } from '@/components/ui/button';
 import df from '../../../public/diagnostico-financiero.png';
 import Image from 'next/image';
 
-export default function Proyects() {
+export default function DiagnosticoFinanciero() {
   return (
-    <div className="flex w-full flex-col items-center justify-center bg-[#fcfffd]">
-      <div className="mb-16 flex w-full justify-center rounded-b-[250px] bg-primary-dark py-[64px] max-lg:mb-8 max-lg:rounded-b-[50px] max-lg:px-4 max-lg:py-8">
-        <div className="flex max-w-[1077px] items-center justify-center max-lg:flex-col-reverse">
+    <main className="flex w-full flex-col items-center justify-center bg-[#fcfffd]">
+      <header className="mb-16 flex w-full justify-center rounded-b-[250px] bg-primary-dark py-[64px] max-lg:mb-8 max-lg:rounded-b-[50px] max-lg:px-4 max-lg:py-8">
+        <section className="flex max-w-[1077px] items-center justify-center max-lg:flex-col-reverse">
           <div className="mr-[83px] flex-col text-[#fcfcfc]">
             <h1 className="mb-8 text-[28px] font-normal max-lg:mb-6 max-lg:mt-8 max-lg:text-[18px]">
               Banco Actinver
@@ -30,8 +30,8 @@ export default function Proyects() {
             className="h-[511px] w-[438px] max-lg:h-[258px] max-lg:w-[228px]"
             alt="celular mostrando sitio web diagnostico financiero, actinver"
           />
-        </div>
-      </div>
-    </div>
+        </section>
+      </header>
+    </main>
   );
 }

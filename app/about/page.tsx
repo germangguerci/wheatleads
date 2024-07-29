@@ -16,9 +16,9 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div className="flex w-full flex-col items-center justify-center bg-[#f3f3f3]">
-      <div className=" flex w-full flex-col items-center justify-center rounded-br-[300px] bg-[#1c1e19] max-lg:rounded-br-[100px]">
-        <div className="relative flex w-full max-w-[1080px] flex-col items-center justify-center text-[#E7ECF3] max-lg:items-start max-lg:py-8">
+    <main className="flex w-full flex-col items-center justify-center bg-[#f3f3f3]">
+      <header className="flex w-full flex-col items-center justify-center rounded-br-[300px] bg-[#1c1e19] max-lg:rounded-br-[100px]">
+        <section className="relative flex w-full max-w-[1080px] flex-col items-center justify-center text-[#E7ECF3] max-lg:items-start max-lg:py-8">
           <h2 className="mb-[245px] mt-[224px] max-w-screen-sm text-center text-[32px] leading-[40px] max-lg:mb-[50px] max-lg:mt-0 max-lg:px-4 max-lg:text-left max-lg:text-[24px] max-lg:leading-[30px]">
             Sabemos cómo poner el foco sobre la clasificación del usuario y
             <span className="font-bold">
@@ -80,11 +80,11 @@ export default function About() {
             />
             <IconCard image={starIcon} title="Content Strategy" />
           </div>
-        </div>
-      </div>
-      <div className="relative flex w-full max-w-[1080px] flex-col items-center pt-[100px] max-lg:px-4 max-lg:pt-[70px]">
-        <div className="flex flex-col items-center">
-          <p className=" text-[28px] leading-[35px] text-[#191A15] max-lg:text-[18px] max-lg:leading-[23px]">
+        </section>
+      </header>
+      <section className="relative flex w-full max-w-[1080px] flex-col items-center pt-[100px] max-lg:px-4 max-lg:pt-[70px]">
+        <article className="flex flex-col items-center">
+          <p className="text-[28px] leading-[35px] text-[#191A15] max-lg:text-[18px] max-lg:leading-[23px]">
             Al trabajar con nuestro equipo tendrás la oportunidad de ser parte
             de él y ayudarnos a crear una solución conjunta. Es por eso, que tu{' '}
             <span className="font-bold">
@@ -92,8 +92,8 @@ export default function About() {
               en la visión de tu marca.
             </span>
           </p>
-        </div>
-        <div className="mb-[105px] mt-8 flex w-full flex-col">
+        </article>
+        <article className="mb-[105px] mt-8 flex w-full flex-col">
           <div className="flex w-full max-lg:flex-col">
             <Card
               image={one}
@@ -117,9 +117,11 @@ export default function About() {
             title="Más resolutivos"
             description="Damos las mejores batallas ante las ejecuciones que requieren de muchas opiniones. Por eso, trabajamos siempre a favor de la performance."
           />
-        </div>
-      </div>
-      <Contact />
-    </div>
+        </article>
+      </section>
+      <footer>
+        <Contact />
+      </footer>
+    </main>
   );
 }

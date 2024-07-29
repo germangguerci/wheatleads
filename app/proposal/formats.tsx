@@ -5,7 +5,7 @@ import sample from '../../public/cardholder.svg';
 
 export default function Formats() {
   return (
-    <div className="flex w-full max-w-[1080px] justify-between max-lg:flex-col max-lg:p-4 lg:mb-[121px]">
+    <section className="flex w-full max-w-[1080px] justify-between max-lg:flex-col max-lg:p-4 lg:mb-[121px]">
       <div className="mb-[192px] mr-[18.5px] flex flex-col max-lg:m-0">
         <Card
           image={sample}
@@ -34,6 +34,6 @@ export default function Formats() {
           className="bg-[#e3e3e3]"
         />
       </div>
-    </div>
+    </section>
   );
 }
