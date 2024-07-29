@@ -58,7 +58,7 @@ function MobileMenu({ isOpen }: { isOpen: boolean }) {
   const isActive = (path: string) => path === pathname;
   return (
     <div
-      className={`absolute left-0 top-[6.8rem] w-full bg-primary-dark shadow-lg ${isOpen ? 'block' : 'hidden'}`}
+      className={`absolute left-0 top-[4.8rem] w-full bg-primary-dark shadow-lg ${isOpen ? 'block' : 'hidden'}`}
     >
       <ul className="flex flex-col items-center p-4 text-[white]">
         {NavLinks.map((link) => {

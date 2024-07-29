@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Contact from '@/components/contact';
 import Formats from './formats';
 import succesCase from '../../public/case.png';
+import Link from 'next/link';
 
 export default function Proposal() {
   return (
@@ -17,7 +18,9 @@ export default function Proposal() {
               En México transformamos la forma de adquirir clientes y de dar
               préstamos con Banco Actinver.
             </p>
-            <CtaButton>Conocer proyecto</CtaButton>
+            <Link href="/proyects/diagnostico-financiero">
+              <CtaButton>Conocer proyecto</CtaButton>
+            </Link>
           </div>
           <Image
             alt="mobile-app"
