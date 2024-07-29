@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import df from '../../../public/diagnostico-financiero.png';
 import Image from 'next/image';
+import Marquee from '@/components/ui/marquee';
 
 export default function DiagnosticoFinanciero() {
   return (
@@ -32,6 +33,34 @@ export default function DiagnosticoFinanciero() {
           />
         </section>
       </header>
+      <div className="mb-[84px] flex max-w-[1077px] text-[22px] font-normal leading-[27px] max-lg:mx-4 max-lg:mb-8 max-lg:flex-col max-lg:text-[18px] max-lg:leading-[22px]">
+        <div className="mr-[108px] flex flex-col">
+          <h1 className="mb-8 text-[52px] font-semibold leading-[65px] max-lg:mb-4 max-lg:text-[24px]">
+            Sobre el proyecto
+          </h1>
+          <p className="max-lg:mb-8">
+            Proponiendo una forma más eficiente de adquirir clientes de calidad
+          </p>
+        </div>
+        <p>
+          Actinver tenía la necesidad de crear una experiencia de adquisición
+          más personalizada. Entonces, con el objetivo de captar clientes que
+          estén bien calificados fue que creamos esta solución medida al 100%.
+          <br />
+          <br />
+          El desafío estuvo en unir todas las partes del proyecto para colaborar
+          con dos métricas principales: el costo por lead calificado y su
+          conversión a futuro.
+          <br />
+          <br />
+          Esto debía reflejarse en un flujo de pantallas para que estimulen a
+          las personas a dejar datos suficientes para clasificar a cada
+          potencial cliente.
+        </p>
+      </div>
+      <div className="flex min-h-screen items-center justify-center bg-gray-900">
+        <Marquee />
+      </div>
     </main>
   );
 }
