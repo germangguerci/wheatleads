@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import df from '../../../public/diagnostico-financiero.png';
 import Image from 'next/image';
-import Marquee from '@/components/ui/marquee';
+import { Marquee } from '@/components/ui/marquee';
 
 export default function DiagnosticoFinanciero() {
   return (
@@ -58,8 +58,59 @@ export default function DiagnosticoFinanciero() {
           potencial cliente.
         </p>
       </div>
-      <div className="flex min-h-screen items-center justify-center bg-gray-900">
-        <Marquee />
+      <div className="mb-[142px] flex w-full max-w-[1072px] flex-col max-lg:mb-8">
+        <Marquee className="mb-6 [--duration:20s] max-lg:mb-4" fade>
+          <Button
+            variant="outline"
+            className="h-[72px] rounded-[40px] border-solid border-primary-dark px-4 py-8 text-[32px] font-medium text-primary-dark max-lg:h-[55px] max-lg:py-6 max-lg:text-[18px]"
+          >
+            Estrategia de diseño
+          </Button>
+          <Button
+            variant="outline"
+            className="h-[72px] rounded-[40px] border-solid border-primary-dark px-4 py-8 text-[32px] font-medium text-primary-dark max-lg:h-[55px] max-lg:py-6 max-lg:text-[18px]"
+          >
+            FullStack
+          </Button>
+          <Button
+            variant="outline"
+            className="h-[72px] rounded-[40px] border-solid border-primary-dark px-4 py-8 text-[32px] font-medium text-primary-dark max-lg:h-[55px] max-lg:py-6 max-lg:text-[18px]"
+          >
+            Experiencia de usuario
+          </Button>
+          <Button
+            variant="outline"
+            className="h-[72px] rounded-[40px] border-solid border-primary-dark px-4 py-8 text-[32px] font-medium text-primary-dark max-lg:h-[55px] max-lg:py-6 max-lg:text-[18px]"
+          >
+            Diseño UX/UI
+          </Button>
+        </Marquee>
+        <Marquee className="[--duration:20s]" fade reverse>
+          <Button
+            variant="outline"
+            className="h-[72px] rounded-[40px] border-solid border-primary-dark px-4 py-8 text-[32px] font-medium text-primary-dark max-lg:h-[55px] max-lg:py-6 max-lg:text-[18px]"
+          >
+            Identidad visual
+          </Button>
+          <Button
+            variant="outline"
+            className="h-[72px] rounded-[40px] border-solid border-primary-dark px-4 py-8 text-[32px] font-medium text-primary-dark max-lg:h-[55px] max-lg:py-6 max-lg:text-[18px]"
+          >
+            Integración con CRM
+          </Button>
+          <Button
+            variant="outline"
+            className="h-[72px] rounded-[40px] border-solid border-primary-dark px-4 py-8 text-[32px] font-medium text-primary-dark max-lg:h-[55px] max-lg:py-6 max-lg:text-[18px]"
+          >
+            Redacción de textos publicitarios
+          </Button>
+          <Button
+            variant="outline"
+            className="h-[72px] rounded-[40px] border-solid border-primary-dark px-4 py-8 text-[32px] font-medium text-primary-dark max-lg:h-[55px] max-lg:py-6 max-lg:text-[18px]"
+          >
+            Integración analytics
+          </Button>
+        </Marquee>
       </div>
     </main>
   );
