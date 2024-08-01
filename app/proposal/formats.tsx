@@ -5,7 +5,7 @@ import sample from '../../public/cardholder.svg';
 
 export default function Formats() {
   return (
-    <section className="flex w-full max-w-[1080px] justify-between max-lg:flex-col max-lg:p-4 lg:mb-[121px]">
+    <section className="flex w-full max-w-[1080px] items-center justify-center max-lg:flex-col max-lg:p-4 lg:mb-[121p]">
       <div className="mb-[192px] mr-[18.5px] flex flex-col max-lg:m-0">
         <Card
           image={sample}

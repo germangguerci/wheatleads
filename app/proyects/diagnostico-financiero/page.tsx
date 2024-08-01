@@ -8,6 +8,14 @@ import d3 from '../../../public/df3.png';
 import d4 from '../../../public/df4.png';
 import gant from '../../../public/gant.png';
 import d5 from '../../../public/df5.png';
+import d6 from '../../../public/df6.png';
+import d7 from '../../../public/df7.svg';
+import d8 from '../../../public/df8.png';
+import d9 from '../../../public/df9.png';
+import d10 from '../../../public/df10.png';
+import d11 from '../../../public/df11.png';
+import d12 from '../../../public/df12.png';
+import d13 from '../../../public/df13.png';
 
 export default function DiagnosticoFinanciero() {
   return (
@@ -148,8 +156,8 @@ export default function DiagnosticoFinanciero() {
           className="h-[491px] w-[243px]"
         />
       </article>
-      <section className="mb-[109px] flex w-full justify-center rounded-[183px] bg-primary-dark px-[102px] py-[142px] text-[#fcfcfc] max-lg:mb-8 max-lg:rounded-[50px] max-lg:px-[24px] max-lg:py-[50px]">
-        <article className="flex w-full max-w-[1072px] flex-col">
+      <section className="mb-[109px] flex w-full items-center justify-center rounded-[183px] bg-primary-dark px-[102px] py-[142px] text-[#fcfcfc] max-lg:mb-8 max-lg:rounded-[50px] max-lg:px-[24px] max-lg:py-[50px]">
+        <article className="flex w-full max-w-[1072px] flex-col items-center">
           <div className="mb-[131px] flex w-full max-lg:mb-8 max-lg:flex-col max-lg:text-[18px]">
             <div className="mr-[109px] flex w-full flex-col text-[22px] font-normal leading-[27px] max-lg:text-[18px] max-lg:leading-[22px]">
               <h1 className="mb-8 text-[52px] font-semibold max-lg:mb-4 max-lg:text-[24px]">
@@ -184,12 +192,34 @@ export default function DiagnosticoFinanciero() {
           <Image
             src={gant}
             alt="imagen diagrama gant"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="h-[517px] w-[1072px] max-lg:h-[141px] max-lg:w-[295px]"
+            width={1078}
+            height={517}
+            className="h-[517px] w-[1072px] max-lg:h-auto max-lg:w-full"
+          />
+          <div className="mb-[29px] mt-[100px] flex w-full items-center justify-center max-lg:mb-2 max-lg:mt-8 max-lg:flex-col">
+            <Image
+              src={d6}
+              alt="macbook con aplicacion diagnostico financiero"
+              width={535}
+              height={629}
+              className="mr-4 max-lg:mb-2 max-lg:mr-0"
+            />
+            <Image
+              src={d7}
+              alt="8 semanas de trabajo"
+              width={535}
+              height={629}
+            />
+          </div>
+          <Image
+            src={d8}
+            alt="Clientes que valen oro"
+            width={1283}
+            height={775}
           />
         </article>
       </section>
-      <article className="mb-[84px] flex max-w-[1077px] flex-col text-[22px] font-normal leading-[27px] max-lg:mx-4 max-lg:mb-8 max-lg:text-[18px] max-lg:leading-[22px]">
+      <article className="mb-[84px] flex max-w-[1077px] flex-col items-center justify-center text-[22px] font-normal leading-[27px] max-lg:mx-4 max-lg:mb-8 max-lg:text-[18px] max-lg:leading-[22px]">
         <div className="mb-[35px] flex w-full max-lg:flex-col">
           <div className="mr-4 flex flex-col lg:min-w-[441px]">
             <h1 className="mb-8 text-[52px] font-semibold leading-[65px] max-lg:mb-4 max-lg:text-[24px]">
@@ -221,7 +251,43 @@ export default function DiagnosticoFinanciero() {
           alt="imagen aplicacion diagnostico financiero"
           width={1072}
           height={474}
-          className="h-[474px] w-[1072px]"
+          className="h-[474px] w-[1072px] max-md:hidden"
+        />
+        <Image
+          src={d9}
+          alt="imagen aplicacion diagnostico financiero"
+          width={288}
+          height={803}
+          className="h-[803px] w-[288px] md:hidden"
+        />
+        <div className="mb-[77px] mt-[34px] flex w-full items-center justify-center max-lg:mb-8 max-lg:flex-col">
+          <Image
+            src={d10}
+            alt="fuentes tipograficas"
+            width={349}
+            height={621}
+            className="mr-4 h-[621px] w-[349px] max-lg:mr-0"
+          />
+          <Image
+            src={d11}
+            alt="componentes"
+            width={713}
+            height={621}
+            className="h-[621px] w-[713px] max-lg:hidden"
+          />
+          <Image
+            src={d12}
+            alt="componentes"
+            width={288}
+            height={262}
+            className="mt-2 h-[262px] w-[288px] lg:hidden"
+          />
+        </div>
+        <Image
+          src={d13}
+          alt="developer frontend usando computadora"
+          width={1083}
+          height={673}
         />
       </article>
     </main>
