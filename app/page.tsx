@@ -38,16 +38,12 @@ export default function Home() {
             <Image
               src={underline}
               alt="Decoracion de titulo"
-              width={340}
-              height={34}
-              className="hidden h-[34px] w-[340px] lg:block"
+              className="h-[34px] w-[340px] max-lg:hidden"
             />
             <Image
               src={underline}
               alt="Decoracion de titulo"
-              width={225}
-              height={21}
-              className="hidden h-[21px] w-[225px] max-lg:block"
+              className="h-[21px] w-[225px] lg:hidden"
             />
             <p className="my-[38px] text-[28px] font-light leading-[35px] max-lg:mb-[32px] max-lg:mt-[38px] max-lg:text-[18px] max-lg:leading-[23px]">
               Optimiza el dinero de tus campañas enfocándolas en el mejor perfil
@@ -60,8 +56,6 @@ export default function Home() {
           <Image
             src={sceneOne}
             alt="lead filter"
-            width={506}
-            height={458}
             className="h-[458px] w-[506px] max-lg:hidden"
           />
         </header>
@@ -86,8 +80,6 @@ export default function Home() {
           <Image
             src={sceneTwo}
             alt="place holder"
-            width={391}
-            height={352}
             className="mr-[120px] h-[352px] w-[391px] max-lg:mr-0"
           />
         </section>
@@ -107,8 +99,6 @@ export default function Home() {
           <Image
             src={sceneFour}
             alt="place holder"
-            width={526}
-            height={352}
             className="ml-[22px] h-[352px] w-[526px]"
           />
         </div>
@@ -122,8 +112,6 @@ export default function Home() {
           <Image
             src={demoApp}
             alt="Demo onboarding"
-            width={428}
-            height={486}
             className="h-[486px] w-[428px] max-lg:hidden"
           />
           <article className="ml-[48px] flex w-full flex-col items-start justify-start text-[#FCFCFC] max-lg:mb-[64px] max-lg:ml-0 max-lg:mt-0">
@@ -131,13 +119,7 @@ export default function Home() {
               ¿Cómo lo hacemos?
             </h2>
             <div className="flex items-start justify-start">
-              <Image
-                src={data}
-                alt="data"
-                width={75}
-                height={75}
-                className="mr-4 max-lg:hidden"
-              />
+              <Image src={data} alt="data" className="mr-4 max-lg:hidden" />
               <div className="mb-[42px] flex flex-col items-start justify-start">
                 <h3 className="text-[27px] font-bold text-primary-shiny max-lg:text-[24px]">
                   Analizamos tus leads
@@ -150,13 +132,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-start justify-start">
-              <Image
-                src={star}
-                alt="star"
-                width={75}
-                height={75}
-                className="mr-4 max-lg:hidden"
-              />
+              <Image src={star} alt="star" className="mr-4 max-lg:hidden" />
               <div className="mb-[42px] flex flex-col items-start justify-start">
                 <h3 className="text-[27px] font-bold text-primary-shiny max-lg:text-[24px]">
                   Experiencia personalizada
@@ -169,13 +145,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-start justify-start">
-              <Image
-                src={code}
-                alt="code"
-                width={75}
-                height={75}
-                className="mr-4 max-lg:hidden"
-              />
+              <Image src={code} alt="code" className="mr-4 max-lg:hidden" />
               <div className="flex flex-col items-start justify-start">
                 <h3 className="text-[27px] font-bold text-primary-shiny max-lg:text-[24px]">
                   Desarrollo a tu medida
@@ -238,7 +208,6 @@ export default function Home() {
                   <Image
                     src={check}
                     alt="check"
-                    width={37}
                     className="mr-[14px] max-lg:size-[28px]"
                   />
                   <p className="text-[18px] font-medium leading-[30px] max-lg:text-[16px]">
@@ -252,7 +221,6 @@ export default function Home() {
                   <Image
                     src={check}
                     alt="check"
-                    width={37}
                     className="mr-[14px] max-lg:size-[28px]"
                   />
                   <p className="text-[18px] font-medium leading-[30px] max-lg:text-[16px]">
@@ -265,8 +233,6 @@ export default function Home() {
                   <Image
                     src={check}
                     alt="check"
-                    width={37}
-                    height={32}
                     className="mr-[14px] max-lg:size-[28px]"
                   />
                   <p className="text-[18px] font-medium leading-[30px] max-lg:text-[16px]">
@@ -277,13 +243,7 @@ export default function Home() {
             </ul>
             <CtaButton className="w-[191px]">Contratar ahora</CtaButton>
           </article>
-          <Image
-            src={easy}
-            alt="llaves en mano"
-            width={412}
-            height={373}
-            className="max-lg:mb-4"
-          />
+          <Image src={easy} alt="llaves en mano" className="max-lg:mb-4" />
         </section>
       </div>
       <Contact />
