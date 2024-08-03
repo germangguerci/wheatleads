@@ -30,16 +30,12 @@ export default function About() {
           <Image
             src={man}
             alt="man ilustration"
-            width={398}
-            height={466}
-            className="absolute left-[-50px] top-[40px] h-[466px] w-[375px] max-lg:hidden"
+            className="absolute left-[-50px] top-[40px] h-auto max-lg:hidden"
           />
           <Image
             src={woman}
             alt="woman ilustration"
-            width={375}
-            height={466}
-            className="absolute right-[-50px] top-[40px] h-[466px] w-[375px] max-lg:hidden"
+            className="absolute right-[-50px] top-[40px] h-auto w-[375px] max-lg:hidden"
           />
           <div className="mb-[91px] flex w-full justify-between max-lg:flex-col">
             <h1 className="max-w-[441px] text-[36px] font-bold leading-[45px] max-lg:mb-4 max-lg:px-4 max-lg:text-[24px] max-lg:leading-[30px]">

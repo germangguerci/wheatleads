@@ -38,10 +38,7 @@ export default function DiagnosticoFinanciero() {
             </Button>
           </div>
           <Image
-            quality={100}
             src={df}
-            width={438}
-            height={511}
             className="h-[511px] w-[438px] max-lg:h-[258px] max-lg:w-[228px]"
             alt="celular mostrando sitio web diagnostico financiero, actinver"
           />
@@ -127,34 +124,10 @@ export default function DiagnosticoFinanciero() {
         </Marquee>
       </div>
       <article className="mb-[142px] flex w-full max-w-[1072px] justify-between max-lg:hidden">
-        <Image
-          src={d1}
-          alt="imagen aplicacion diagnostico financiero"
-          width={243}
-          height={491}
-          className="h-[491px] w-[243px]"
-        />
-        <Image
-          src={d2}
-          alt="imagen aplicacion diagnostico financiero"
-          width={243}
-          height={491}
-          className="h-[491px] w-[243px]"
-        />
-        <Image
-          src={d3}
-          alt="imagen aplicacion diagnostico financiero"
-          width={243}
-          height={491}
-          className="h-[491px] w-[243px]"
-        />
-        <Image
-          src={d4}
-          alt="imagen aplicacion diagnostico financiero"
-          width={243}
-          height={491}
-          className="h-[491px] w-[243px]"
-        />
+        <Image src={d1} alt="imagen aplicacion diagnostico financiero" />
+        <Image src={d2} alt="imagen aplicacion diagnostico financiero" />
+        <Image src={d3} alt="imagen aplicacion diagnostico financiero" />
+        <Image src={d4} alt="imagen aplicacion diagnostico financiero" />
       </article>
       <section className="mb-[109px] flex w-full items-center justify-center rounded-[183px] bg-primary-dark px-[102px] py-[142px] text-[#fcfcfc] max-lg:mb-8 max-lg:rounded-[50px] max-lg:px-[24px] max-lg:py-[50px]">
         <article className="flex w-full max-w-[1072px] flex-col items-center">
@@ -192,30 +165,24 @@ export default function DiagnosticoFinanciero() {
           <Image
             src={gant}
             alt="imagen diagrama gant"
-            width={1078}
-            height={517}
-            className="h-[517px] w-[1072px] max-lg:h-auto max-lg:w-full"
+            className="h-auto w-[1072px]"
           />
           <div className="mb-[29px] mt-[100px] flex w-full items-center justify-center max-lg:mb-2 max-lg:mt-8 max-lg:flex-col">
             <Image
               src={d6}
               alt="macbook con aplicacion diagnostico financiero"
-              width={535}
-              height={629}
-              className="mr-4 max-lg:mb-2 max-lg:mr-0"
+              className="mr-4 h-[629px] w-[535px] max-lg:mb-2 max-lg:mr-0 max-lg:size-full"
             />
             <Image
               src={d7}
               alt="8 semanas de trabajo"
-              width={535}
-              height={629}
+              className="h-[629px] w-[535px]"
             />
           </div>
           <Image
             src={d8}
             alt="Clientes que valen oro"
-            width={1283}
-            height={775}
+            className="h-auto w-[1283px]"
           />
         </article>
       </section>
@@ -249,46 +216,31 @@ export default function DiagnosticoFinanciero() {
         <Image
           src={d5}
           alt="imagen aplicacion diagnostico financiero"
-          width={1072}
-          height={474}
-          className="h-[474px] w-[1072px] max-md:hidden"
+          className="h-auto w-[1072px] max-md:hidden"
         />
         <Image
           src={d9}
           alt="imagen aplicacion diagnostico financiero"
-          width={288}
-          height={803}
           className="h-[803px] w-[288px] md:hidden"
         />
         <div className="mb-[77px] mt-[34px] flex w-full items-center justify-center max-lg:mb-8 max-lg:flex-col">
           <Image
             src={d10}
             alt="fuentes tipograficas"
-            width={349}
-            height={621}
             className="mr-4 h-[621px] w-[349px] max-lg:mr-0"
           />
           <Image
             src={d11}
             alt="componentes"
-            width={713}
-            height={621}
             className="h-[621px] w-[713px] max-lg:hidden"
           />
           <Image
             src={d12}
             alt="componentes"
-            width={288}
-            height={262}
             className="mt-2 h-[262px] w-[288px] lg:hidden"
           />
         </div>
-        <Image
-          src={d13}
-          alt="developer frontend usando computadora"
-          width={1083}
-          height={673}
-        />
+        <Image src={d13} alt="developer frontend usando computadora" />
       </article>
     </main>
   );

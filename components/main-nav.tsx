@@ -14,15 +14,11 @@ function Logo() {
       <Image
         src={logo}
         alt="wheat leads logo"
-        height={44}
-        width={245}
         className="mr-2 hidden size-auto h-[44px] w-[245px] lg:block"
       />
       <Image
         src={logoMobile}
         alt="wheat leads logo"
-        height={51}
-        width={45}
         className="mr-2 block size-auto lg:hidden"
       />
     </Link>

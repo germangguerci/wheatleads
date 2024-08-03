@@ -25,9 +25,7 @@ export default function Proposal() {
           <Image
             alt="mobile-app"
             src={succesCase}
-            height={317}
-            width={578}
-            className="mr-[34px] h-[317px] w-[578px] max-lg:mb-[33px] max-lg:h-[152px] max-lg:w-[277px]"
+            className="mr-[34px] h-[317px] w-auto max-lg:mb-[33px] max-lg:h-[152px]"
           />
         </section>
       </header>
