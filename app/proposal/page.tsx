@@ -23,6 +23,7 @@ export default function Proposal() {
             </Link>
           </div>
           <Image
+            priority
             alt="mobile-app"
             src={succesCase}
             className="mr-[34px] h-[317px] w-auto max-lg:mb-[33px] max-lg:h-[152px]"

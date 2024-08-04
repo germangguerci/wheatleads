@@ -8,13 +8,11 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
   image: StaticImageData;
   title: string;
   description: string;
-  wImage?: number;
   ctaText?: string;
 }
 
 export default function Card({
   image,
-  wImage,
   title,
   description,
   className,
@@ -25,7 +23,7 @@ export default function Card({
     'flex w-full max-w-[525px] flex-col rounded-[16px] bg-neutral-light p-8 shadow-card';
   return (
     <div className={cn(styles, className)} {...props}>
-      <Image src={image} alt={`Image of ${title}`} width={wImage ?? 461} />
+      <Image src={image} alt={`Image of ${title}`} />
       <h1 className="mt-[30px] text-[30px] font-bold text-[#191A15]">
         {title}
       </h1>

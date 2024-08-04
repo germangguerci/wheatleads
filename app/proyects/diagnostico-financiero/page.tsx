@@ -16,6 +16,13 @@ import d10 from '../../../public/df10.png';
 import d11 from '../../../public/df11.png';
 import d12 from '../../../public/df12.png';
 import d13 from '../../../public/df13.png';
+import ipdf1 from '../../../public/ipdf1.png';
+import ipdf2 from '../../../public/ipdf2.png';
+import ipdf3 from '../../../public/ipdf3.png';
+import ipdf4 from '../../../public/ipdf4.png';
+import ipdf5 from '../../../public/ipdf5.png';
+import ipdf6 from '../../../public/ipdf6.png';
+import ipdf7 from '../../../public/ipdf7.png';
 
 export default function DiagnosticoFinanciero() {
   return (
@@ -38,6 +45,7 @@ export default function DiagnosticoFinanciero() {
             </Button>
           </div>
           <Image
+            priority
             src={df}
             className="h-[511px] w-[438px] max-lg:h-[258px] max-lg:w-[228px]"
             alt="celular mostrando sitio web diagnostico financiero, actinver"
@@ -69,7 +77,7 @@ export default function DiagnosticoFinanciero() {
           potencial cliente.
         </p>
       </article>
-      <div className="mb-[142px] flex w-full max-w-[1072px] flex-col max-lg:mb-8">
+      <section className="mb-[142px] flex w-full max-w-[1072px] flex-col max-lg:mb-8">
         <Marquee className="mb-6 [--duration:20s] max-lg:mb-4" fade>
           <Button
             variant="outline"
@@ -122,14 +130,14 @@ export default function DiagnosticoFinanciero() {
             Integración analytics
           </Button>
         </Marquee>
-      </div>
-      <article className="mb-[142px] flex w-full max-w-[1072px] justify-between max-lg:hidden">
+      </section>
+      <section className="mb-[142px] flex w-full max-w-[1072px] justify-between max-lg:hidden">
         <Image src={d1} alt="imagen aplicacion diagnostico financiero" />
         <Image src={d2} alt="imagen aplicacion diagnostico financiero" />
         <Image src={d3} alt="imagen aplicacion diagnostico financiero" />
         <Image src={d4} alt="imagen aplicacion diagnostico financiero" />
-      </article>
-      <section className="mb-[109px] flex w-full items-center justify-center rounded-[183px] bg-primary-dark px-[102px] py-[142px] text-[#fcfcfc] max-lg:mb-8 max-lg:rounded-[50px] max-lg:px-[24px] max-lg:py-[50px]">
+      </section>
+      <section className="mb-[109px] flex w-full items-center justify-center rounded-[250px] bg-primary-dark px-[102px] py-[142px] text-[#fcfcfc] max-lg:mb-8 max-lg:rounded-[50px] max-lg:px-[24px] max-lg:py-[50px]">
         <article className="flex w-full max-w-[1072px] flex-col items-center">
           <div className="mb-[131px] flex w-full max-lg:mb-8 max-lg:flex-col max-lg:text-[18px]">
             <div className="mr-[109px] flex w-full flex-col text-[22px] font-normal leading-[27px] max-lg:text-[18px] max-lg:leading-[22px]">
@@ -227,7 +235,7 @@ export default function DiagnosticoFinanciero() {
           <Image
             src={d10}
             alt="fuentes tipograficas"
-            className="mr-4 h-[621px] w-[349px] max-lg:mr-0"
+            className="mr-4 h-auto w-[349px] max-lg:mr-0"
           />
           <Image
             src={d11}
@@ -242,6 +250,69 @@ export default function DiagnosticoFinanciero() {
         </div>
         <Image src={d13} alt="developer frontend usando computadora" />
       </article>
+      <section className="mb-[109px] flex w-full items-center justify-center rounded-t-[250px] bg-primary-dark px-[102px] pb-[182px] pt-[142px] text-[#fcfcfc] max-lg:rounded-[50px] max-lg:px-4 max-lg:py-16">
+        <article className="flex w-full max-w-[1072px] flex-col items-center">
+          <div className="mb-[61px] flex w-full max-lg:mb-8 max-lg:flex-col max-lg:text-[18px]">
+            <h1 className="mr-[85px] text-[52px] font-semibold leading-[65px] max-lg:mb-4 max-lg:w-full max-lg:text-[24px] max-lg:leading-[30px]">
+              Desarrollando la maquina de pulir leads
+            </h1>
+            <p>
+              La solución se preparó para recibir parámetros que indiquen el
+              tipo de campaña publicitaria, el medio de origen y otros datos
+              relacionados con la adquisición del usuario.
+              <br />
+              <br />
+              Estos también fueron guardados en el CRM, con el objetivo de tener
+              información para una mejor distribución del presupuesto
+              publicitario.
+              <br />
+              <br />
+              El plus más grande que podemos darte es el alto nivel de
+              desarrollo integrado con la mejor herramienta de medición.
+            </p>
+          </div>
+          <div className="flex w-full items-center justify-start max-lg:justify-center">
+            <Image
+              src={ipdf1}
+              alt="imagen aplicacion diagnostico financiero"
+              className="mr-8 max-lg:mr-2"
+            />
+            <Image
+              src={ipdf2}
+              alt="imagen aplicacion diagnostico financiero"
+              className="mr-8 max-lg:mr-2"
+            />
+            <Image src={ipdf3} alt="imagen aplicacion diagnostico financiero" />
+          </div>
+          <p className="my-[55px] rounded-[16px] border border-solid border-primary-light px-[35px] py-[28px] text-start text-[22px] leading-[27px] max-lg:p-4 max-lg:text-[18px] max-lg:leading-[22px]">
+            Desarrollamos 52 frames responsivos que responden a 4 flujos
+            internos los cuales se encargan de clasificar y desestimar aquellos
+            leads que no cumplen con los objetivos de comerciales del cliente.{' '}
+          </p>
+          <div className="flex w-full items-center justify-end max-lg:justify-center">
+            <Image
+              src={ipdf4}
+              alt="imagen aplicacion diagnostico financiero"
+              className="mr-8 max-lg:mr-1 max-lg:h-auto max-lg:w-[67px]"
+            />
+            <Image
+              src={ipdf5}
+              alt="imagen aplicacion diagnostico financiero"
+              className="mr-8 max-lg:mr-1 max-lg:h-auto max-lg:w-[67px]"
+            />
+            <Image
+              src={ipdf6}
+              alt="imagen aplicacion diagnostico financiero"
+              className="mr-8 max-lg:mr-1 max-lg:h-auto max-lg:w-[67px]"
+            />
+            <Image
+              src={ipdf7}
+              alt="imagen aplicacion diagnostico financiero"
+              className="max-lg:h-auto max-lg:w-[67px]"
+            />
+          </div>
+        </article>
+      </section>
     </main>
   );
 }

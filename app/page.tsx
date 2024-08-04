@@ -54,6 +54,7 @@ export default function Home() {
             </Link>
           </section>
           <Image
+            priority
             src={sceneOne}
             alt="lead filter"
             className="h-[458px] w-[506px] max-lg:hidden"
@@ -121,7 +122,7 @@ export default function Home() {
             <div className="flex items-start justify-start">
               <Image src={data} alt="data" className="mr-4 max-lg:hidden" />
               <div className="mb-[42px] flex flex-col items-start justify-start">
-                <h3 className="text-[27px] font-bold text-primary-shiny max-lg:text-[24px]">
+                <h3 className="text-[27px] font-bold text-primary-light max-lg:text-[24px]">
                   Analizamos tus leads
                 </h3>
                 <p className="text-[14px] leading-[30px]">
@@ -134,7 +135,7 @@ export default function Home() {
             <div className="flex items-start justify-start">
               <Image src={star} alt="star" className="mr-4 max-lg:hidden" />
               <div className="mb-[42px] flex flex-col items-start justify-start">
-                <h3 className="text-[27px] font-bold text-primary-shiny max-lg:text-[24px]">
+                <h3 className="text-[27px] font-bold text-primary-light max-lg:text-[24px]">
                   Experiencia personalizada
                 </h3>
                 <p className="text-[14px] leading-[30px]">
@@ -147,7 +148,7 @@ export default function Home() {
             <div className="flex items-start justify-start">
               <Image src={code} alt="code" className="mr-4 max-lg:hidden" />
               <div className="flex flex-col items-start justify-start">
-                <h3 className="text-[27px] font-bold text-primary-shiny max-lg:text-[24px]">
+                <h3 className="text-[27px] font-bold text-primary-light max-lg:text-[24px]">
                   Desarrollo a tu medida
                 </h3>
                 <p className="text-[14px] leading-[30px]">

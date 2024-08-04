@@ -28,11 +28,13 @@ export default function About() {
             </span>
           </h2>
           <Image
+            priority
             src={man}
             alt="man ilustration"
             className="absolute left-[-50px] top-[40px] h-auto max-lg:hidden"
           />
           <Image
+            priority
             src={woman}
             alt="woman ilustration"
             className="absolute right-[-50px] top-[40px] h-auto w-[375px] max-lg:hidden"
