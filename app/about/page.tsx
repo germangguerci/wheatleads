@@ -96,13 +96,11 @@ export default function About() {
             <Card
               image={one}
               className="mb-4 mr-4 max-w-full max-lg:mr-0"
-              wImage={483}
               title="Somo ágiles"
               description="La rapidez no da resultados, pero sí el orden y el cumplimiento de tareas. Por eso para ser eficientes en la gestión del tiempo, evitamos las reuniones innecesarias."
             />
             <Card
               image={two}
-              wImage={496}
               className="max-w-full"
               title="100% autónomos"
               description="Parte de hacer bien nuestro trabajo es que vos puedas verlo siempre. Nos encanta que seas parte de un tablero de seguimiento para que veas por dónde estamos cosechando."
@@ -111,7 +109,6 @@ export default function About() {
           <Card
             className="mt-4 max-w-full"
             image={three}
-            wImage={998}
             title="Más resolutivos"
             description="Damos las mejores batallas ante las ejecuciones que requieren de muchas opiniones. Por eso, trabajamos siempre a favor de la performance."
           />

@@ -175,16 +175,16 @@ export default function DiagnosticoFinanciero() {
             alt="imagen diagrama gant"
             className="h-auto w-[1072px]"
           />
-          <div className="mb-[29px] mt-[100px] flex w-full items-center justify-center max-lg:mb-2 max-lg:mt-8 max-lg:flex-col">
+          <div className="mb-[29px] mt-[100px] flex w-full flex-wrap items-center justify-center max-lg:mb-2 max-lg:mt-8 max-lg:flex-col">
             <Image
               src={d6}
               alt="macbook con aplicacion diagnostico financiero"
-              className="mr-4 h-[629px] w-[535px] max-lg:mb-2 max-lg:mr-0 max-lg:size-full"
+              className="mr-4 h-auto w-[500px] max-lg:mb-2 max-lg:mr-0"
             />
             <Image
               src={d7}
               alt="8 semanas de trabajo"
-              className="h-[629px] w-[535px]"
+              className="h-auto w-[500px]"
             />
           </div>
           <Image
@@ -250,7 +250,7 @@ export default function DiagnosticoFinanciero() {
         </div>
         <Image src={d13} alt="developer frontend usando computadora" />
       </article>
-      <section className="mb-[109px] flex w-full items-center justify-center rounded-t-[250px] bg-primary-dark px-[102px] pb-[182px] pt-[142px] text-[#fcfcfc] max-lg:rounded-[50px] max-lg:px-4 max-lg:py-16">
+      <section className="mb-[109px] flex w-full items-center justify-center rounded-t-[250px] bg-primary-dark px-[102px] pb-[182px] pt-[142px] text-[#fcfcfc] max-lg:mb-0 max-lg:rounded-[50px] max-lg:px-4 max-lg:py-16">
         <article className="flex w-full max-w-[1072px] flex-col items-center">
           <div className="mb-[61px] flex w-full max-lg:mb-8 max-lg:flex-col max-lg:text-[18px]">
             <h1 className="mr-[85px] text-[52px] font-semibold leading-[65px] max-lg:mb-4 max-lg:w-full max-lg:text-[24px] max-lg:leading-[30px]">
@@ -313,6 +313,32 @@ export default function DiagnosticoFinanciero() {
           </div>
         </article>
       </section>
+      <article className="mb-[110px] flex max-w-[1072px] flex-col items-center justify-center font-medium max-lg:px-4 max-lg:py-8">
+        <p className="mb-[72px] text-left text-[54px] font-medium leading-[68px] max-lg:mb-8 max-lg:text-[24px] max-lg:leading-[30px]">
+          Estos son los resultados que demuestran cómo transformamos un lead
+          que...
+        </p>
+        <div className="flex w-full justify-center max-lg:flex-col max-lg:items-center">
+          <div className="mr-[21px] flex w-full flex-col max-lg:mr-0">
+            <p className="mb-4 rounded-[16px] border border-solid border-primary-dark px-[35px] py-8 text-[32px] leading-[40px] text-primary-dark max-lg:p-4 max-lg:text-[18px] max-lg:leading-[23px]">
+              Es tres veces más barato que los que traían el año pasado.
+            </p>
+            <p className="mb-4 rounded-[16px] border border-solid border-primary-dark px-[35px] py-8 text-[32px] leading-[40px] text-primary-dark max-lg:p-4 max-lg:text-[18px] max-lg:leading-[23px]">
+              Deja muchas más información que antes y se puede categorizar o
+              priorizar según el score que busca el cliente.
+            </p>
+            <p className="mb-4 rounded-[16px] border border-solid border-primary-dark px-[35px] py-8 text-[32px] leading-[40px] text-primary-dark max-lg:p-4 max-lg:text-[18px] max-lg:leading-[23px]">
+              Entiende el motivo del contacto y está mucho más calificado.
+            </p>
+          </div>
+          <div className="flex grow items-end rounded-[16px] bg-primary-dark p-8">
+            <p className="text-[32px] leading-[40px] text-white max-lg:text-[24px] max-lg:leading-[30px]">
+              Actinver como cliente ahora invierte montos mayores a los que
+              solía pautar.
+            </p>
+          </div>
+        </div>
+      </article>
     </main>
   );
 }
