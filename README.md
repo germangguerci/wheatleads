@@ -1,10 +1,10 @@
-# Weatleads - Official Website
+# Wheatleads - Official Website
 
-Welcome to the official website repository for Weatleads. This project is the central hub for our web presence, offering a user-friendly platform to showcase our services, connect with clients, and provide valuable resources.
+Welcome to the official website repository for Wheatleads. This project is the central hub for our web presence, offering a user-friendly platform to showcase our services, connect with clients, and provide valuable resources.
 
 ## Overview
 
-The Weatleads official website serves as the digital face of our company. This repository contains all the necessary code and assets to maintain and update the site, ensuring it remains a reliable resource for our clients and partners.
+The Wheatleads official website serves as the digital face of our company. This repository contains all the necessary code and assets to maintain and update the site, ensuring it remains a reliable resource for our clients and partners.
 
 ## Features
 
