@@ -114,9 +114,7 @@ export default function About() {
           />
         </article>
       </section>
-      <footer>
-        <Contact />
-      </footer>
+      <Contact />
     </main>
   );
 }

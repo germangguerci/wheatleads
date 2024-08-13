@@ -15,39 +15,52 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from './ui/textarea';
 import CtaButton from './ui/cta-button';
+import { sendEmail } from '@/lib/server/email';
+import { useState } from 'react';
+import okform from '../public/okform.svg';
+import Image from 'next/image';
 
-const formSchema = z.object({
+export const formSchema = z.object({
   email: z.string().email({
     message: 'El email debe ser válido.',
   }),
-  empresa: z.string().min(2, {
+  company: z.string().min(2, {
     message: 'El nombre de la empresa debe tener al menos 2 caracteres.',
   }),
-  mensaje: z.string().min(10, {
+  message: z.string().min(10, {
     message: 'El mensaje debe tener al menos 10 caracteres.',
   }),
 });
 
 export function ContactForm() {
+  const [sendStatus, setSendStatus] = useState('clean');
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       email: '',
-      empresa: '',
-      mensaje: '',
+      company: '',
+      message: '',
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log('Hola', values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const res = await sendEmail(values);
+    if (res.success) {
+      setSendStatus('sent');
+    } else {
+      setSendStatus('error');
+    }
   }
-
-  return (
+  // eslint-disable-next-line no-nested-ternary
+  return sendStatus === 'clean' ? (
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         className="flex w-full flex-col items-center"
       >
+        <p className="pb-[17px]">
+          Puedes compartir tus datos para que te contactemos a la brevedad
+        </p>
         <FormField
           control={form.control}
           name="email"
@@ -67,7 +80,7 @@ export function ContactForm() {
         />
         <FormField
           control={form.control}
-          name="empresa"
+          name="company"
           render={({ field }) => (
             <FormItem className="mb-[17px] w-full">
               <FormLabel>Empresa</FormLabel>
@@ -84,7 +97,7 @@ export function ContactForm() {
         />
         <FormField
           control={form.control}
-          name="mensaje"
+          name="message"
           render={({ field }) => (
             <FormItem className="mb-[17px] w-full">
               <FormLabel>¿Cómo te ayudamos?</FormLabel>
@@ -107,5 +120,42 @@ export function ContactForm() {
         </CtaButton>
       </form>
     </Form>
+  ) : sendStatus === 'sent' ? (
+    <div className="flex w-full flex-col items-center pt-[87px] text-center max-lg:p-0">
+      <Image src={okform} alt="Ok check" unoptimized />
+      <p className="my-8 text-[18px] font-bold max-lg:mt-4">
+        Tu consulta fue enviada con éxito.
+        <br />
+        <br />
+        En instantes recibirás respuesta a los medios que nos proporcionaste.
+      </p>
+      <p className="text-[18px] font-normal">
+        ¡Gracias por tu contacto!
+        <br />
+        <br />
+        Equipo Wheatleads
+      </p>
+    </div>
+  ) : (
+    <div className="flex w-full flex-col items-center pt-[87px] text-center max-lg:p-0">
+      <p className="my-8 text-[18px] font-bold max-lg:mt-4">
+        ¡Ups! Esto es incómodo...
+        <br />
+        <br />
+        Algo no funcionó bien.
+      </p>
+      <p className="text-[18px] font-normal">
+        Por favor, contáctanos directamente en{' '}
+        <a
+          href="mailto:info@wheatleads.com"
+          className="text-blue-500 underline"
+        >
+          info@wheatleads.com
+        </a>
+        <br />
+        <br />
+        Lamentamos los inconvenientes.
+      </p>
+    </div>
   );
 }
