@@ -4,12 +4,33 @@ import { Sora } from 'next/font/google';
 import type { ReactNode } from 'react';
 import MainNav from '../components/main-nav';
 import Footer from '@/components/footer';
+import ogImage from './opengraph-image.png';
 
 const inter = Sora({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Wheatleads',
-  description: 'Separa la paja del trigo',
+  metadataBase: new URL('https://wheatleads.com'),
+  title: 'Wheatleads - Separamos la paja del trigo',
+  description:
+    'Descubre como optimizar el dinero de tus campañas enfocándolas en el mejor perfil de cliente para tu negocio',
+  openGraph: {
+    images: [
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height,
+      },
+    ],
+  },
+  twitter: {
+    images: [
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height,
+      },
+    ],
+  },
 };
 
 interface RootLayoutProps {
