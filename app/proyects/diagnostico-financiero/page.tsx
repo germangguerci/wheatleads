@@ -37,12 +37,12 @@ export default function DiagnosticoFinanciero() {
               Empieza a dar préstamos bancarios a clientes calificados que valen
               oro para la industria.
             </p>
-            <Button
+            {/*   <Button
               variant="outline"
               className="h-[62px] rounded-[40px] px-[30px] py-[20px] text-[18px] font-medium"
             >
               Ver en vivo
-            </Button>
+            </Button> */}
           </div>
           <Image
             priority
