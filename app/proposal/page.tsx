@@ -16,7 +16,7 @@ export default function Proposal() {
             </h1>
             <p className="mb-8 text-[32px] font-semibold leading-[40px] text-neutral-dark max-lg:text-[24px] max-lg:leading-[30px]">
               En México transformamos la forma de adquirir clientes y de dar
-              préstamos con Banco Actinver.
+              préstamos con Banco.
             </p>
             <Link href="/proyects/diagnostico-financiero">
               <CtaButton>Conocer proyecto</CtaButton>

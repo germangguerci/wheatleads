@@ -48,7 +48,7 @@ export default function DiagnosticoFinanciero() {
             priority
             src={df}
             className="h-[511px] w-[438px] max-lg:h-[258px] max-lg:w-[228px]"
-            alt="celular mostrando sitio web diagnostico financiero, actinver"
+            alt="celular mostrando sitio web diagnostico financiero"
           />
         </section>
       </header>
@@ -333,8 +333,7 @@ export default function DiagnosticoFinanciero() {
           </div>
           <div className="flex grow items-end rounded-[16px] bg-primary-dark p-8">
             <p className="text-[32px] leading-[40px] text-white max-lg:text-[24px] max-lg:leading-[30px]">
-              Actinver como cliente ahora invierte montos mayores a los que
-              solía pautar.
+              El cliente ahora invierte montos mayores a los que solía pautar.
             </p>
           </div>
         </div>
