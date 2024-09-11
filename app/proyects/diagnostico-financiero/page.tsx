@@ -31,7 +31,7 @@ export default function DiagnosticoFinanciero() {
         <section className="flex max-w-[1077px] items-center justify-center max-lg:flex-col-reverse">
           <div className="mr-[83px] flex-col text-[#fcfcfc]">
             <h1 className="mb-8 text-[28px] font-normal max-lg:mb-6 max-lg:mt-8 max-lg:text-[18px]">
-              Banco Actinver
+              Banco en México
             </h1>
             <p className="mb-8 text-[32px] font-semibold leading-[40px] max-lg:mb-6 max-lg:text-[24px] max-lg:leading-[30px]">
               Empieza a dar préstamos bancarios a clientes calificados que valen
@@ -62,7 +62,7 @@ export default function DiagnosticoFinanciero() {
           </p>
         </div>
         <p>
-          Actinver tenía la necesidad de crear una experiencia de adquisición
+          El cliente tenía la necesidad de crear una experiencia de adquisición
           más personalizada. Entonces, con el objetivo de captar clientes que
           estén bien calificados fue que creamos esta solución medida al 100%.
           <br />
@@ -218,7 +218,7 @@ export default function DiagnosticoFinanciero() {
             <br />
             Finalmente, el funnel de clasificación de leads se vió representado
             en cada pantalla, obteniendo sobre el final del flujo, una base de
-            contactos más limpia y ajustada al producto que Actinver vendía.
+            contactos más limpia y ajustada al producto que el banco vendía.
           </p>
         </div>
         <Image
